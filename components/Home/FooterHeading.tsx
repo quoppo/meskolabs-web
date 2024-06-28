@@ -6,7 +6,7 @@ const FooterHeading: React.FC = () => {
         <h2 className="text-4xl font-inter font-semibold">Heading</h2>
         <p className="text-lg font-inter text-gray-500">Plus a subheading for your site’s footer</p>
         <div>
-        <button className="bg-black text-white p-2.5 text-xs rounded-lg mt-1 px-5 font-inter font-semibold">
+        <button className="bg-black text-white p-2 px-5 text-xs rounded-lg hover:bg-white hover:text-black border-2 border-black font-inter font-semibold">
           Button
         </button>
       </div>

@@ -24,7 +24,7 @@ const BkpkProjectBrief: React.FC = () => {
         </p>
       </div>
       <div className="px-10 sm:px-24 leading-8 font-poppins">
-        <h5 className="text-xl sm:text-2xl font-medium font-sans">
+        <h5 className="text-xl sm:text-2xl font-medium">
           Key Features and Innovations
         </h5>
         <div>

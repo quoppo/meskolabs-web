@@ -14,7 +14,7 @@ const DlvrEase: React.FC = () => {
       <DlvrIdeation />
       <DlvrSolution />
       <DlvrOther />
-      <OtherProjects />
+      <OtherProjects modha={true} deltaRobot={true} bkpk={true}/>
     </div>
   );
 };

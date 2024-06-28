@@ -13,7 +13,7 @@ const ModhaProject: React.FC = () => {
       <ModhaImageSection />
       <ModhaSolution />
       <div className="sm:py-16 pb:20">
-        <OtherProjects />
+        <OtherProjects deltaRobot={true} dlvr={true} bkpk={true}/>
       </div>
     </div>
   );

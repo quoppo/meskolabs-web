@@ -11,7 +11,7 @@ const Bkpk: React.FC = () => {
       <BkpkMain />
       <BkpkProjectBrief />
       <BkpkSolution />
-      <OtherProjects />
+      <OtherProjects deltaRobot={true} dlvr={true} modha={true}/>
       <Footer2 />
     </div>
   );
