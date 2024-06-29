@@ -6,9 +6,7 @@ const DlvrProjectBrief: React.FC = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 p-10 sm:p-24 text-center">
-        <h4 className="text-gray-400 font-inter lg:w-1/6 text-3xl leading-snug text-center lg:text-left font-semibold lg:mt-2">
-          Project Brief
-        </h4>
+      <div className="lg:w-1/6"></div>
         <p className="lg:w-5/6 text-justify sm:px-10 leading-7 font-poppins">
           This project was dedicated to developing innovative solutions for
           delivery personnel by addressing the numerous challenges posed by
@@ -49,7 +47,9 @@ const DlvrProjectBrief: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 p-5 sm:p-24 text-center">
-        <div className="lg:w-1/6"></div>
+        <h4 className="text-gray-400 font-inter lg:w-1/6 text-3xl leading-snug text-center lg:text-left font-semibold lg:mt-2">
+          Project Brief
+        </h4>
         <p className="lg:w-5/6 text-justify px-10 sm:px-20 leading-7 font-medium font-poppins">
           Current Challenges: <br />
           Delivery bags are not waterproof, leading to increased weight when

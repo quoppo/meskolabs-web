@@ -26,11 +26,11 @@ const OtherProjects: React.FC<OtherProjectsProps> = ({
   };
 
   return (
-    <div className="p-10 pb-28">
+    <div className="p-5 sm:p-10 pb-28">
       <p className="text-2xl py-5 font-semibold font-inter text-center lg:text-left px-16">
         Other projects
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-16">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 sm:px-16">
         {modha && (
           <div className="relative cursor-pointer h-64" onClick={() => handleProjectClick("/modha-project")}>
             <div className="absolute inset-0 flex items-center justify-center z-10 text-xl font-semibold bg-black bg-opacity-50 text-white">

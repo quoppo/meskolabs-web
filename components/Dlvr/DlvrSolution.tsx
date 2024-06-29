@@ -10,7 +10,7 @@ import dlvr14 from "../../public/assets/Dlvr/dlvr14.jpg";
 const DlvrSolution: React.FC = () => {
   return (
     <div className="w-full py-10">
-      <p className="text-xl font-bold font-inter text-gray-500 px-20 py-5">
+      <p className="text-2xl font-bold font-inter text-gray-500 px-20 py-5">
         The Solution
       </p>
       <div className="grid grid-cols-1 gap-5">
@@ -35,9 +35,9 @@ const DlvrSolution: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Image src={dlvr13} alt="project-image" className="rounded-xl" />
-      </div>
+      </div> */}
       <div className="flex justify-center">
         <Image src={dlvr14} alt="project-image" className="rounded-xl" />
       </div>

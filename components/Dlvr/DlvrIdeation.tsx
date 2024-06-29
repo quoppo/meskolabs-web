@@ -12,41 +12,50 @@ const DlvrIdeation: React.FC = () => {
   return (
     <>
       <div className="w-full py-10">
-        <p className="text-xl font-bold font-inter text-gray-400 px-20 py-5">
+        <p className="text-2xl font-bold font-inter text-gray-400 px-20 py-5">
           Ideation 1
         </p>
         <div className="grid grid-cols-1 gap-5">
-          <Image src={dlvr2} alt="project-image" />
+          {/* <Image src={dlvr2} alt="project-image" />
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-center items-center">
             <Image src={dlvr3} alt="project-image" />
             <Image src={dlvr4} alt="project-image" />
-          </div>
+          </div> */}
           <Image src={dlvr5} alt="project-image" />
         </div>
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <p className="text-xl font-bold text-gray-400 px-20 py-5 font-inter">
           Ideation 2
         </p>
         <div className="grid grid-cols-1 gap-5 justify-center">
           <Image src={dlvrProject6} alt="project-image" />
         </div>
-      </div>
-      <div className="w-full">
+      </div> */}
+      {/* <div className="w-full">
         <p className="text-xl font-bold font-inter text-gray-400 px-20 py-5">
           Ideation 3
         </p>
         <div className="grid grid-cols-1 gap-5 justify-center">
           <Image src={dlvrProject7} alt="project-image" />
         </div>
-      </div>
+      </div> */}
       <div className="w-full">
-        <p className="text-xl font-bold font-inter text-gray-400 px-20 py-5">
+        {/* <p className="text-xl font-bold font-inter text-gray-400 px-20 py-5">
           Ideation 4
-        </p>
+        </p> */}
         <div className="grid grid-cols-1 gap-5 justify-center">
           <Image src={dlvrProject8} alt="project-image" />
         </div>
+      </div>
+      <div className="w-full p-12 sm:p-20 sm:px-28 leading-6">
+        <p className="font-poppins">
+          Showcasing potential features such as magnetic flaps for easy access,
+          expandable storage, and a waterproof design. These concepts aim to
+          enhance ergonomic support and provide seamless attachment to common
+          bike frames, ensuring balanced weight distribution and efficient
+          delivery operations.
+        </p>
       </div>
     </>
   );

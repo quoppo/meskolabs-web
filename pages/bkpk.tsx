@@ -2,7 +2,7 @@ import React from "react";
 import BkpkMain from "@/components/Bkpk/BkpkMain";
 import BkpkProjectBrief from "@/components/Bkpk/BkpkProjectBrief";
 import BkpkSolution from "@/components/Bkpk/BkpkSolution";
-import Footer2 from "@/components/Footer2";
+// import Footer2 from "@/components/Footer2";
 import OtherProjects from "@/components/common/OtherProjects";
 
 const Bkpk: React.FC = () => {
@@ -12,7 +12,7 @@ const Bkpk: React.FC = () => {
       <BkpkProjectBrief />
       <BkpkSolution />
       <OtherProjects deltaRobot={true} dlvr={true} modha={true}/>
-      <Footer2 />
+      {/* <Footer2 /> */}
     </div>
   );
 };
