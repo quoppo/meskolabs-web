@@ -7,9 +7,15 @@ const Footer: React.FC = () => {
       <div className="flex flex-col justify-between sm:w-1/3 gap-1">
         <a href="/" className="text-2xl sm:text-3xl font-poppins">Meskolabs</a>
         <div className="flex gap-5 text-gray-500 text-xs">
-          <a href="https://x.com/meskolabs" target="_blank" rel="noopener noreferrer"><FaTwitter size={24} /></a>
-          <a href="https://www.linkedin.com/company/meskolabs/" target="_blank"><FaLinkedin size={24} /></a>
-          <a href="https://www.instagram.com/meskolabs" target="_blank" rel="noopener noreferrer"><FaInstagram size={24} /></a>
+          <a href="https://x.com/meskolabs" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <FaTwitter size={24} />
+          </a>
+          <a href="https://www.linkedin.com/company/meskolabs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin size={24} />
+          </a>
+          <a href="https://www.instagram.com/meskolabs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FaInstagram size={24} />
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-3 sm:w-2/4 font-poppins">
@@ -28,7 +34,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-3 leading-7">
             <div>
               <p>LinkedIn:</p>
-              <a href="https://www.linkedin.com/company/meskolabs/" target="_blank">www.linkedin.com/meskolabs</a>
+              <a href="https://www.linkedin.com/company/meskolabs/" target="_blank" rel="noopener noreferrer">www.linkedin.com/meskolabs</a>
             </div>
             <div>
               <p>Instagram:</p>
