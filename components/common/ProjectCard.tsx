@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgPath, title, description, 
       <div className="relative w-full h-80 overflow-hidden shadow-md rounded-lg">
         <Image
           src={imgPath}
-          alt="Project Image"
+          alt={title}
           layout="fill"
           objectFit="cover"
           objectPosition="center"
