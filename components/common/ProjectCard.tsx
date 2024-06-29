@@ -27,6 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgPath, title, description, 
           objectFit="cover"
           objectPosition="center"
           className="w-full"
+          loading="lazy"
         />
       </div>
       <h3 className="text-3xl font-semibold mt-3 font-inter">{title}</h3>

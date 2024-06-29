@@ -18,6 +18,8 @@ export default function RootLayout({
     <html lang="en">
        <head>
         <meta charSet="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@400&family=Montserrat:wght@400&display=swap" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

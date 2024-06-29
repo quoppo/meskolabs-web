@@ -12,6 +12,7 @@ const DlvrMain: React.FC = () => {
         objectFit="cover"
         objectPosition="center"
         className="z-0 filter grayscale"
+        priority={true}
       />
       <div className="absolute inset-0 flex items-center justify-end pr-14 sm:pr-32 z-10">
         <div className="flex flex-col text-center">

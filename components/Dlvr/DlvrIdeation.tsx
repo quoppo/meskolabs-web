@@ -10,7 +10,7 @@ const DlvrIdeation: React.FC = () => {
         <p className="text-2xl font-bold font-inter text-gray-400 px-20 py-5">
           Ideation 1
         </p>
-        <div className="grid grid-cols-1 gap-5">
+        <div className="flex gap-5 justify-center">
           <Image src={dlvr5} alt="project-image" />
         </div>
       </div>

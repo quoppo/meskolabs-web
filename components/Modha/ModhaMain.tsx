@@ -4,7 +4,7 @@ import modhaProject from "../../public/assets/modha-project.png";
 
 const ModhaMain: React.FC = () => {
   return (
-    <div className="relative h-[60vh] md:h-[76vh] w-full">
+    <div className="relative h-[60vh] md:h-[80vh] w-full">
       <Image
         src={modhaProject}
         alt="Background"
@@ -12,6 +12,7 @@ const ModhaMain: React.FC = () => {
         objectFit="cover"
         objectPosition="center"
         className="z-0"
+        priority={true}
       />
       <div className="absolute inset-0 flex items-center z-10 bg-black text-white bg-opacity-5">
         <div className="px-12 lg:px-28 lg:w-2/3 flex flex-col gap-5">

@@ -24,7 +24,7 @@ const ModhaProjectBrief: React.FC = () => {
         <ModhaBgImgCard />
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 p-10 px-10 sm:px-24 text-center">
-        <h4 className="text-gray-400 font-inter lg:w-1/6 text-3xl leading-snug text-center lg:text-left font-semibold">
+        <h4 className="text-gray-400 font-inter lg:w-1/6 text-2xl leading-snug text-center lg:text-left font-semibold">
           Ideation for tables
         </h4>
         <p className="lg:w-5/6 text-justify sm:px-20 leading-7 text-black font-medium font-inter">
