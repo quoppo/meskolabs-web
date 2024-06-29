@@ -4,7 +4,7 @@ const Main: React.FC = () => {
   return (
     <div className="flex items-center sm:h-screen px-5 sm:px-12">
       <div className="px-10 sm:px-16 flex flex-col gap-5 lg:w-4/6">
-        <h2 className="text-4xl sm:text-6xl text-gray-700 font-medium leading-relaxed font-poppins"  style={{ lineHeight: '1.4' }}>
+        <h2 className="text-4xl md:text-6xl text-gray-700 font-medium font-poppins" style={{ lineHeight: '1.4' }} role="heading">
           Empowering Your Designs with Meskolabs Expertise
         </h2>
         <p className="text-gray-500 text-lg font-inter">

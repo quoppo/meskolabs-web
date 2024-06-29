@@ -12,7 +12,7 @@ const BkpkMain: React.FC = () => {
         </p>
       </div>
       <div>
-        <Image src={bkpk1} alt="project-img" />
+        <Image src={bkpk1} alt="project-img" className="h-100" height={700} />
       </div>
     </div>
   );

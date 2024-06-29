@@ -4,7 +4,6 @@ import dlvrProject9 from "../../public/assets/Dlvr/dlvrProject9.png";
 import dlvrProject10 from "../../public/assets/Dlvr/dlvrProject10.png";
 import dlvrProject11 from "../../public/assets/Dlvr/dlvrProject11.png";
 import dlvr12 from "../../public/assets/Dlvr/dlvr12.png";
-import dlvr13 from "../../public/assets/Dlvr/dlvr13.png";
 import dlvr14 from "../../public/assets/Dlvr/dlvr14.jpg";
 
 const DlvrSolution: React.FC = () => {
@@ -35,9 +34,6 @@ const DlvrSolution: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <div className="flex justify-center">
-        <Image src={dlvr13} alt="project-image" className="rounded-xl" />
-      </div> */}
       <div className="flex justify-center">
         <Image src={dlvr14} alt="project-image" className="rounded-xl" />
       </div>

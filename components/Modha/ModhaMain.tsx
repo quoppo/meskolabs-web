@@ -4,7 +4,7 @@ import modhaProject from "../../public/assets/modha-project.png";
 
 const ModhaMain: React.FC = () => {
   return (
-    <div className="relative h-[90vh] w-full">
+    <div className="relative h-[60vh] md:h-[76vh] w-full">
       <Image
         src={modhaProject}
         alt="Background"
