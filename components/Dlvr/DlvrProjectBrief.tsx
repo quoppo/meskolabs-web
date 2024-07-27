@@ -6,7 +6,7 @@ const DlvrProjectBrief: React.FC = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 p-10 sm:p-24 text-center">
-      <div className="lg:w-1/6"></div>
+        <div className="lg:w-1/6"></div>
         <p className="lg:w-5/6 text-justify sm:px-10 leading-7 font-poppins">
           This project was dedicated to developing innovative solutions for
           delivery personnel by addressing the numerous challenges posed by

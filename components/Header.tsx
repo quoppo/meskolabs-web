@@ -1,28 +1,68 @@
-import React, { useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import Logo from '../public/assets/meskolabLogo.png'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '../public/assets/meskolabLogo.png';
+
+const DropdownMenu: React.FC = () => {
+  return (
+    <div className="absolute bg-white shadow-lg mt-2 rounded-lg w-48 z-10">
+      <Link href="/kequel" className="block px-4 py-2 text-gray-700 hover:text-gray-900">Kequel</Link>
+      <Link href="/dlvr" className="block px-4 py-2 text-gray-700 hover:text-gray-900">DLVR</Link>
+      <Link href="/dronesports" className="block px-4 py-2 text-gray-700 hover:text-gray-900">Drone Sports India</Link>
+      <Link href="/delta-robotics" className="block px-4 py-2 text-gray-700 hover:text-gray-900">Delta Robotics</Link>
+    </div>
+  );
+};
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [leaveTimeout, setLeaveTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
+
+  const handleMouseEnter = () => {
+    if (leaveTimeout) {
+      clearTimeout(leaveTimeout);
+      setLeaveTimeout(null);
+    }
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setShowDropdown(false);
+    }, 200); // Adjust the delay (in milliseconds) as needed
+    setLeaveTimeout(timeout);
+  };
 
   return (
     <>
-      <div className="flex justify-between items-center px-5 sm:px-20 py-4">
+      <div className={'relative flex justify-between items-center px-5 sm:px-15 py-4'} style={{ opacity: 1, transition: 'opacity 0.3s ease' }}>
         <div>
           <Link href="/" className='flex items-center gap-3'>
             <Image src={Logo} alt="Meskolabs Logo" width={40} height={40} />
             <p className='text-xl font-poppins'>meskolabs</p>
           </Link>
         </div>
-        <nav className="hidden md:flex space-x-6 items-center font-inter">
-          <Link href="/" className="text-gray-700 hover:text-gray-900">Page</Link>
-          <Link href="/" className="text-gray-700 hover:text-gray-900">Page</Link>
-          <Link href="/" className="text-gray-700 hover:text-gray-900">Page</Link>
+        <nav className="hidden md:flex space-x-6 items-center font-inter relative">
+          <div
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              type="button"
+              className="text-gray-700 hover:text-gray-900 focus:outline-none"
+            >
+              Products
+            </button>
+            {showDropdown && <DropdownMenu />}
+          </div>
+          <Link href="/" className="text-gray-700 hover:text-gray-900">Services</Link>
+          <Link href="/about-us" className="text-gray-700 hover:text-gray-900">About Us</Link>
           <Link href="/" className="bg-black text-white p-2 px-5 text-xs rounded-lg hover:bg-white hover:text-black border-2 border-black">Contact Us</Link>
         </nav>
         <div className="md:hidden">
@@ -43,10 +83,11 @@ const Header: React.FC = () => {
           <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Page</Link>
           <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Page</Link>
           <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
+
         </nav>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

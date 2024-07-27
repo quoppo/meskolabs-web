@@ -101,7 +101,7 @@ const BkpkProjectBrief: React.FC = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 p-10 sm:py-16 sm:px-24 text-center lg:text-left">
         <h4 className="text-gray-400 lg:w-1/6 text-3xl font-bold font-inter">
-        Ideation
+          Ideation
         </h4>
         <p className="lg:w-5/6 text-justify sm:px-10 leading-7 font-inter">
           Exquisite sophisticated iconic cutting-edge laborum deserunt esse

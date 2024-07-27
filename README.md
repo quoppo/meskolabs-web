@@ -17,20 +17,20 @@ To get started with Meskolabs Web, follow these steps:
    git clone https://github.com/yourusername/meskolabs-web.git
    cd meskolabs-web
    ```
-   
+
 2. **Install Dependencies**
-    ```bash
-    npm i
-    ```
+
+   ```bash
+   npm i
+   ```
 
 3. **Run the development server**
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
 ## Technologies Used
 
 **Next.js Framework**
 **Tailwind CSS**
 **TypeScript**
-

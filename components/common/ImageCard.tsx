@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 interface ImageCardProps {
-    imgPath: string; // image URL/path
-    width: number; // width of the image
-    height: number; // height of the image
+  imgPath: string; // image URL/path
+  width: number; // width of the image
+  height: number; // height of the image
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({ imgPath, width, height }) => {
