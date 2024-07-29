@@ -234,7 +234,7 @@ const Main: React.FC = () => {
                   Unleashing Speed and Accuracy with Delta Robotics
                 </h2>
                 <div className="pl-80 ">
-                  <a href="/delta-robot">
+                  <a href="/delta-robotics">
                   <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
@@ -296,6 +296,7 @@ const Main: React.FC = () => {
         </div>
 
      <div
+            id="services"
             className="snap-start grid w-screen h-screen place-items-start text-8xl"
             style={{ backgroundColor: "white" }}
           >
@@ -345,10 +346,12 @@ const Main: React.FC = () => {
                       <p className="text-sm">{service.description}</p>
                     </div>
                   </div>
+                  <a href="#contactUs">
                   <button className="bg-black text-white text-sm px-3 py-1.5 rounded-full flex items-center space-x-2">
                     <span>Contact us</span>
                     <span>→</span>
                   </button>
+                  </a>
                 </div>
               ))}
             </div>

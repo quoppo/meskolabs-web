@@ -8,13 +8,13 @@ const Footer: React.FC = () => {
       id="footer"
     >
       <div className="flex flex-col space-y-3">
-        <a href="/" className="text-xl">
+        <a href="#services" className="text-xl">
           Services
         </a>
         <a href="/about-us" className="text-xl">
           About Us
         </a>
-        <a href="/" className="text-xl">
+        <a href="#contactUs" className="text-xl">
           Contact Us
         </a>
       </div>
