@@ -358,7 +358,7 @@ const Main: React.FC = () => {
           className="snap-start grid w-screen h-screen place-items-start text-8xl"
           style={{ backgroundColor: "white" }}
         >
-          <div className="bg-white shadow-md rounded px-6 pt-4 pb-6 mb-4 w-full max-w-full h-full flex flex-col justify-center">
+          <div className="bg-white shadow-md rounded px-6 pr-10 pt-4 pb-6 mb-4 w-full max-w-full h-full flex flex-col justify-center">
             <ContactForm />
           </div>
         </div>

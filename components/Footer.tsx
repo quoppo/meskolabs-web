@@ -9,12 +9,9 @@ const Footer: React.FC = () => {
     >
       <div className="flex flex-col space-y-3">
         <a href="/" className="text-xl">
-          Products
-        </a>
-        <a href="/" className="text-xl">
           Services
         </a>
-        <a href="/" className="text-xl">
+        <a href="/about-us" className="text-xl">
           About Us
         </a>
         <a href="/" className="text-xl">
@@ -22,8 +19,8 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <div className="flex flex-col text-right space-y-2">
-        <p className="text-sm">Address dhbbd djn dd cbnc dcn</p>
-        <p className="text-sm">email.quqopo@xyz</p>
+        <p className="text-sm">Pune</p>
+        <p className="text-sm">meskolabs@gmail.com</p>
         <p className="text-sm">+91 7720076457</p>
         <div className="flex justify-end space-x-3">
           <a
