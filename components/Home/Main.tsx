@@ -6,8 +6,11 @@ import { ContactForm } from "../common/contactForm";
 import backgroundImage from "../../public/assets/dronesports.png";
 import backgroundImage2 from "../../public/assets/kequel.png";
 import backgroundImage3 from "../../public/assets/delta.png";
+import backgroundImage4 from "../../public/assets/dlvr.png";
 
 const Main: React.FC = () => {
+
+  
   const [text] = useTypewriter({
     words: [
       "web & app development",
@@ -133,9 +136,11 @@ const Main: React.FC = () => {
                   A project by Mesckolabs and XCompany's visionary collaboration
                 </h2>
                 <div className="pl-80 ">
+                  <a href="/dronesports">
                   <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -181,9 +186,11 @@ const Main: React.FC = () => {
                   Lifestyles
                 </h2>
                 <div className="pl-80 ">
+                  <a href="/kequel">
                   <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -227,83 +234,67 @@ const Main: React.FC = () => {
                   Unleashing Speed and Accuracy with Delta Robotics
                 </h2>
                 <div className="pl-80 ">
+                  <a href="/delta-robot">
                   <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* <div
-          className="snap-start grid w-screen h-screen place-items-start text-8xl"
-          style={{ backgroundColor: "white" }}
+        <div
+          className="snap-start grid w-screen h-screen place-items-center text-8xl"
+          style={{
+            backgroundImage: "url('public/assets/dlvr.png.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <div className="space-y-8 pl-20 pt-5">
-            <h1 className="text-4xl font-bold mt-10 pl-30 animate-bounce">
-              Our Services
-            </h1>
-
-            <div className="relative space-y-4">
-              {[
-                {
-                  number: "01",
-                  title: "Product Design & Development",
-                  description:
-                    "From conceptualization to market-ready prototypes, we ensure that every step of the design and development process is meticulously executed.",
-                },
-                {
-                  number: "02",
-                  title: "Embedded Hardware & SOFTWARE",
-                  description:
-                    "We specialize in developing custom hardware solutions that seamlessly integrate with software, providing you with the tools you need to innovate and stay ahead.",
-                },
-                {
-                  number: "03",
-                  title: "Website/App Design & Development",
-                  description:
-                    "Whether you're looking for an e-commerce platform, a dynamic corporate website, or a cutting-edge mobile app, we've got you covered with our web and app development services.",
-                },
-                {
-                  number: "04",
-                  title: "Prototype",
-                  description: "Dummy Text",
-                },
-              ].map((service, index) => (
-                <div
-                  key={index}
-                  className="relative group transition-transform transform-gpu hover:scale-105"
-                  style={{
-                    zIndex: 10 - index,
-                    transform: `translateY(${index * -40}px)`,
-                  }}
+          <div
+            style={{
+              backgroundImage: `url(${backgroundImage4.src})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "100vw",
+              height: "100vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className="flex justify-center items-center h-screen">
+              <div className="px-10 sm:px-8 flex flex-col gap-5 lg:w-6/6">
+                <h2
+                  className="text-3xl md:text-4xl pl-80 lg:text-5xl text-white font-medium font-poppins"
+                  style={{ lineHeight: "1.4" }}
+                  role="heading"
                 >
-                  <div className="bg-white shadow-lg p-6 rounded-lg border border-gray-200 transition-all duration-300 ease-in-out transform group-hover:translate-y-2">
-                    <div className="flex justify-between items-center">
-                      <div className="flex space-x-4 items-start">
-                        <div className="flex flex-col items-center">
-                          <span className="text-2xl font-bold">
-                            {service.number}
-                          </span>
-                        </div>
-                        <div>
-                          <h2 className="text-xl font-bold">{service.title}</h2>
-                          <p className="text-sm">{service.description}</p>
-                        </div>
-                      </div>
-                      <button className="bg-black text-white text-sm px-3 py-1.5 rounded-full flex items-center space-x-2">
-                        <span>Contact us</span>
-                        <span>→</span>
-                      </button>
-                    </div>
-                  </div>
+                  DLVR
+                </h2>
+                <h2
+                  className="text-base md:text-bse pl-80 lg:text-base text-white font-medium font-poppins"
+                  style={{ lineHeight: "1.4" }}
+                  role="heading"
+                >
+                  Friend Of Last Mile Drivers
+                  Bringing Smiles back.(Delivery bag)
+                </h2>
+                <div className="pl-80 ">
+                  <a href="/dlvr">
+                  <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
+                    Know more
+                  </button>
+                  </a>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
-     */} 
+
      <div
             className="snap-start grid w-screen h-screen place-items-start text-8xl"
             style={{ backgroundColor: "white" }}
