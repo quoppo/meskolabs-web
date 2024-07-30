@@ -46,7 +46,7 @@ const Main2: React.FC = () => {
     const image3 = "/assets/dronesports/banner5.png";
 
     return (
-      <div className="flex justify-center items-start space-x-8">
+      <div className="flex justify-center items-start space-x-3">
         <ImageCard
           image={image1}
           title=""
@@ -175,7 +175,7 @@ const Main2: React.FC = () => {
             <div className="justify-items-start h-screen">
               <div className="  lg:w-4/6">
                 <h2
-                  className=" text-2xl md:text-2xl  lg:text-2xl text-black font-medium font-poppins content-start pl-10"
+                  className=" text-4xl md:text-4xl  lg:text-4xl text-black font-medium font-poppins content-start pl-10"
                   style={{ lineHeight: "1.2" }}
                   role="heading"
                 >
@@ -196,7 +196,7 @@ const Main2: React.FC = () => {
                 {/* And a subheading describing your site, too                   */}
                 {/* </p> */}
               </div>
-              <div className="flex justify-center items-center space-x-8 mt-8">
+              <div className="flex justify-center items-center space-x-5 mt-8">
                 <ImageCardList />
               </div>
             </div>

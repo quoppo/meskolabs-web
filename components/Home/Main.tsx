@@ -23,7 +23,16 @@ const Main: React.FC = () => {
     deleteSpeed: 50,
     delaySpeed: 1000,
   });
-
+  const [text2] = useTypewriter({
+    words: [
+      "Our services",
+    
+    ],
+    loop: true,
+    typeSpeed: 70,
+    deleteSpeed: 70,
+    delaySpeed: 100,
+  });
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: any) {
@@ -55,8 +64,9 @@ const Main: React.FC = () => {
   }
 
   return (
-    <div>
-      <div className="snap-y snap-mandatory h-screen w-screen mx:auto overflow-x-hidden">
+  
+      <div className="snap-y snap-mandatory h-screen w-screen  overflow-x-hidden">
+        <div>
         <div className="snap-start relative w-screen h-screen grid place-items-center">
           <video
             autoPlay
@@ -137,7 +147,7 @@ const Main: React.FC = () => {
                 </h2>
                 <div className="pl-80 ">
                   <a href="/dronesports">
-                  <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
+                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
                   </a>
@@ -187,7 +197,7 @@ const Main: React.FC = () => {
                 </h2>
                 <div className="pl-80 ">
                   <a href="/kequel">
-                  <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
+                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
                   </a>
@@ -235,7 +245,7 @@ const Main: React.FC = () => {
                 </h2>
                 <div className="pl-80 ">
                   <a href="/delta-robotics">
-                  <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
+                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
                   </a>
@@ -285,7 +295,7 @@ const Main: React.FC = () => {
                 </h2>
                 <div className="pl-80 ">
                   <a href="/dlvr">
-                  <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
+                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     Know more
                   </button>
                   </a>
@@ -301,9 +311,24 @@ const Main: React.FC = () => {
             style={{ backgroundColor: "white" }}
           >
             <div className="space-y-8 pl-20 pt-5 ">
-              <h1 className="text-4xl font-bold mt-10 pl-30 animate-bounce">
+             {/*  <h1 className="text-4xl font-bold mt-10 pl-30 animate-bounce">
                 Our Services
-              </h1>
+              </h1> */}
+              <span
+                    role="heading"
+                    style={{
+                      fontSize: "0.3em",
+                      display: "inline-block",
+                      lineHeight: "1.8",
+                      color: "black",
+                    }}
+                  >
+               {" "}
+                    <span style={{ color: "black", fontWeight: "" }}>
+                      {text2}
+                    </span>
+                    <Cursor />
+                  </span>
 
               {[
                 {
@@ -347,7 +372,7 @@ const Main: React.FC = () => {
                     </div>
                   </div>
                   <a href="#contactUs">
-                  <button className="bg-black text-white text-sm px-3 py-1.5 rounded-full flex items-center space-x-2">
+                  <button className="bg-black text-white p-3 px-5 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
                     <span>Contact us</span>
                     <span>→</span>
                   </button>
@@ -365,8 +390,9 @@ const Main: React.FC = () => {
             <ContactForm />
           </div>
         </div>
-      </div>
+        </div>
     </div>
+
   );
 };
 

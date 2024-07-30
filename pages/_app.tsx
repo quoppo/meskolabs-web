@@ -5,6 +5,8 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/montserrat/400.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ParallaxProvider } from 'react-scroll-parallax';
+import '../app/globals.css'; 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

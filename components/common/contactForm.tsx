@@ -94,7 +94,7 @@ export const ContactForm = forwardRef<HTMLDivElement>((props, ref) => {
                 </label>
                 <select
                   name="service"
-                  className="block w-full h-10 p-2 border-b border-gray-300 rounded-none text-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="block w-full h-11 p-2 border-b border-gray-300 rounded-none text-sm focus:ring-blue-500 focus:border-blue-500"
                   required
                 >
                   <option value="option"></option>
@@ -118,7 +118,7 @@ export const ContactForm = forwardRef<HTMLDivElement>((props, ref) => {
             <div className="pl-80">
               <button
                 type="submit"
-                className="mt-4 pl-10 pr-10 py-2 bg-black rounded-2xl text-white text-sm font-medium hover:bg-black focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="bg-black text-white p-3 px-5 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium"
               >
                 Submit
               </button>
