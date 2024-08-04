@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import ImageCard from "../common/ImageCard";
 
 const ModhaImageSection: React.FC = () => {
@@ -35,3 +35,4 @@ const ModhaImageSection: React.FC = () => {
 };
 
 export default ModhaImageSection;
+ */

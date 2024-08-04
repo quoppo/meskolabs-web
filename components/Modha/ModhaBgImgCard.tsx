@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const ModhaBgImgCard: React.FC = () => {
   return (
@@ -11,3 +11,4 @@ const ModhaBgImgCard: React.FC = () => {
 };
 
 export default ModhaBgImgCard;
+ */

@@ -32,7 +32,10 @@ const OtherProjects: React.FC<OtherProjectsProps> = ({
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 sm:px-16">
         {modha && (
-          <div className="relative cursor-pointer h-64" onClick={() => handleProjectClick("/modha-project")}>
+          <div
+            className="relative cursor-pointer h-64"
+            onClick={() => handleProjectClick("/modha-project")}
+          >
             <div className="absolute inset-0 flex items-center justify-center z-10 text-xl font-semibold bg-black bg-opacity-50 text-white">
               Modha
             </div>
@@ -46,7 +49,10 @@ const OtherProjects: React.FC<OtherProjectsProps> = ({
           </div>
         )}
         {bkpk && (
-          <div className="relative cursor-pointer h-64" onClick={() => handleProjectClick("/bkpk")}>
+          <div
+            className="relative cursor-pointer h-64"
+            onClick={() => handleProjectClick("/bkpk")}
+          >
             <div className="absolute inset-0 flex items-center justify-center z-10 text-xl font-semibold bg-black bg-opacity-50 text-white">
               BKPK
             </div>
@@ -60,7 +66,10 @@ const OtherProjects: React.FC<OtherProjectsProps> = ({
           </div>
         )}
         {dlvr && (
-          <div className="relative cursor-pointer h-64" onClick={() => handleProjectClick("/dlvr-ease")}>
+          <div
+            className="relative cursor-pointer h-64"
+            onClick={() => handleProjectClick("/dlvr-ease")}
+          >
             <div className="absolute inset-0 flex items-center justify-center z-10 text-xl font-semibold bg-black bg-opacity-50 text-white">
               DLVR Ease
             </div>
@@ -74,7 +83,10 @@ const OtherProjects: React.FC<OtherProjectsProps> = ({
           </div>
         )}
         {deltaRobot && (
-          <div className="relative cursor-pointer h-64" onClick={() => handleProjectClick("/")}>
+          <div
+            className="relative cursor-pointer h-64"
+            onClick={() => handleProjectClick("/")}
+          >
             <div className="absolute inset-0 flex items-center justify-center z-10 text-xl font-semibold bg-black bg-opacity-50 text-white">
               Delta Robots
             </div>

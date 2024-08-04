@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import ModhaBgImgCard from "./ModhaBgImgCard";
 
 const ModhaProjectBrief: React.FC = () => {
@@ -39,3 +39,4 @@ const ModhaProjectBrief: React.FC = () => {
 };
 
 export default ModhaProjectBrief;
+ */

@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import Image from "next/image";
 import Image14 from "../../public/assets/modha/modhaProject14.jpeg";
 import Image15 from "../../public/assets/modha/modhaProject15.jpeg";
@@ -72,3 +72,4 @@ const ModhaSolution: React.FC = () => {
 };
 
 export default ModhaSolution;
+ */
