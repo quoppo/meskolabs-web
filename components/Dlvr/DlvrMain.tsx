@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import backgroundImage from "../../public/assets/dlvr/banner1.png";
-import backgroundImage2 from "../../public/assets/dlvr/banner2.png";
+import backgroundImage from "../../public/assets/Dlvr/banner1.png";
+import backgroundImage2 from "../../public/assets/Dlvr/banner2.png";
 import backgroundImage3 from "../../public/assets/modha/banner3.png";
 import backgroundImage4 from "../../public/assets/modha/banner4.png";
 import backgroundImage5 from "../../public/assets/modha/banner5.png";
