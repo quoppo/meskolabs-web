@@ -80,307 +80,322 @@ const Main: React.FC = () => {
             <source src="/bgvid.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="flex items-center sm:h-screen px-5 sm:px-12">
-            <div>
-              <div className="text-3xl md:text-4xl lg:text-5xl font-medium font-poppins pr-60 pl-10">
-                <span
-                  role="heading"
-                  style={{
-                    fontSize: "0.8em",
-                    display: "inline-block",
-                    lineHeight: "1.8",
-                    color: "black",
-                  }}
-                >
-                  Transforming organisations with our comprehensive solutions in
-                  the form of{" "}
-                  <span style={{ color: "darkblue", fontWeight: "bold" }}>
-                    {text}
-                  </span>
-                  <Cursor />
-                </span>
-              </div>
-            </div>
-            <div className="absolute inset-x-0 bottom-5 left-10 pl-10 pb-40">
-              <button className="bg-black text-white p-5 px-10 text-xs rounded-full hover:bg-white hover:text-black border-2 border-black mt-1 font-inter font-medium">
-                Know more about us
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          className="snap-start grid w-screen h-screen place-items-center text-8xl"
-          style={{
-            backgroundImage: "url('publicassetsdronesports.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: `url(${backgroundImage.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className="flex justify-center items-center h-screen">
-              <div className="px-10 sm:px-8 flex flex-col gap-5 lg:w-6/6">
-                <h2
-                  className="text-3xl md:text-4xl pl-80 lg:text-5xl text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Drone Sports India
-                </h2>
-                <h2
-                  className="text-base md:text-bse pl-80 lg:text-base text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  A project by Mesckolabs and XCompany's visionary collaboration
-                </h2>
-                <div className="pl-80 ">
-                  <a href="/dronesports">
-                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                    Know more
-                  </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <div className="flex pt-60 flex-col items-start sm:h-screen px-5 sm:px-12">
+  <div className="text-3xl md:text-4xl lg:text-5xl font-medium font-poppins pr-0 sm:pr-60 ">
+    <span
+      role="heading"
+      style={{
+        fontSize: "0.8em",
+        display: "inline-block",
+        lineHeight: "1.8",
+        color: "black",
+      }}
+    >
+      Transforming organisations with our comprehensive solutions in the form of{" "}
+      <span style={{ color: "darkblue", fontWeight: "bold" }}>
+        {text}
+      </span>
+      <Cursor />
+    </span>
+  </div>
+  <div className="mt-10 lg:ml-4">
+    <button className="bg-black text-white p-3 px-6 text-xs sm:text-sm md:text-base lg:text-lg rounded-full hover:bg-white hover:text-black border-2 border-black font-inter font-medium">
+      Know more about us
+    </button>
+  </div>
+</div>
 
-        <div
-          className="snap-start grid w-screen h-screen place-items-center text-8xl"
-          style={{
-            backgroundImage: "url('publicassetskequel.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: `url(${backgroundImage2.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className="flex justify-center items-center h-screen">
-              <div className="px-10 sm:px-8 flex flex-col gap-5 lg:w-6/6">
-                <h2
-                  className="text-3xl md:text-4xl pl-80 lg:text-5xl text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Kequel(Smart Bedside table)
-                </h2>
-                <h2
-                  className="text-base md:text-bse pl-80 lg:text-base text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Redefining Smart Functionality and Customization for Modern
-                  Lifestyles
-                </h2>
-                <div className="pl-80 ">
-                  <a href="/kequel">
-                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                    Know more
-                  </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        {/* <div
+  className="snap-start grid w-screen h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/public/assets/dronesports.png')",
+  }}
+>
+  <div
+    className="w-full h-full flex items-center justify-center bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${backgroundImage.src})`,
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+    <div className="flex flex-col justify-center items-start w-full max-w-screen-lg h-full p-4 sm:p-6 md:p-8 lg:p-10">
+      <h2
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Drone Sports India
+      </h2>
+      <h2
+        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        A project by Mesckolabs and XCompany's visionary collaboration
+      </h2>
+      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
+        <a href="/dronesports">
+          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
+            Know more
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div> */}
+
+<div
+  className="snap-start grid w-screen h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/public/assets/dronesports.png)", // Ensure this path is correct
+  }}
+>
+  <div
+    style={{
+      backgroundImage: `url(${backgroundImage.src})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      width: "100vw",
+      height: "100vh",
+    }}
+    className="flex items-center justify-center"
+  >
+    <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
+      <h2
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Drone Sports India
+      </h2>
+      <h2
+        className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.2" }}
+        role="heading"
+      >
+        A project by Mesckolabs and XCompany's visionary collaboration
+      </h2>
+      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
+        <a href="/kequel">
+          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
+            Know More
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div
+  className="snap-start grid w-screen h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/publicassetskequel.png')", // Ensure this path is correct
+  }}
+>
+  <div
+    style={{
+      backgroundImage: `url(${backgroundImage2.src})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      width: "100vw",
+      height: "100vh",
+    }}
+    className="flex items-center justify-center"
+  >
+    <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
+      <h2
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Kequel (Smart Bedside Table)
+      </h2>
+      <h2
+        className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Redefining Smart Functionality and Customization for Modern Lifestyles
+      </h2>
+      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
+        <a href="/kequel">
+          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
+            Know More
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  className="snap-start grid w-screen h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/publicassetsdelta.png')", // Ensure this path is correct
+  }}
+>
+  <div
+    style={{
+      backgroundImage: `url(${backgroundImage3.src})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      width: "100vw",
+      height: "100vh",
+    }}
+    className="flex items-center justify-center"
+  >
+    <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
+      <h2
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Delta Robot
+      </h2>
+      <h2
+        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Unleashing Speed and Accuracy with Delta Robotics
+      </h2>
+      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
+        <a href="/delta-robotics">
+          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
+            Know More
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  className="snap-start grid w-screen h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/public/assets/dlvr.png')", // Ensure the path is correct
+  }}
+>
+  <div
+    style={{
+      backgroundImage: `url(${backgroundImage4.src})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      width: "100vw",
+      height: "100vh",
+    }}
+    className="flex items-center justify-center"
+  >
+    <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
+      <h2
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        DLVR
+      </h2>
+      <h2
+        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins text-left mt-4 lg:pl-20 xl:pl-40"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Friend Of Last Mile Drivers
+        <br />
+        Bringing Smiles Back (Delivery Bag)
+      </h2>
+      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
+        <a href="/dlvr">
+          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
+            Know More
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div
+  id="services"
+  className="snap-start grid w-screen h-screen place-items-start text-8xl bg-white overflow-y-auto"
+>
+  <div className="space-y-8 px-4 sm:px-8 md:px-16 lg:px-16 xl:px-24 pt-5">
+    <span
+      role="heading"
+      className="text-xl md:text-sm lg:text-base xl:text-lg"
+      style={{
+        lineHeight: "1.8",
+        color: "black",
+      }}
+    >
+      <span className="text-black text-5xl font-normal">
+        {text2}
+      </span>
+      <Cursor />
+    </span>
+
+    {[
+      {
+        number: "01",
+        title: "Product Design & Development",
+        description:
+          "From conceptualization to market-ready prototypes, we ensure that every step of the design and development process is meticulously executed.",
+      },
+      {
+        number: "02",
+        title: "Embedded Hardware & SOFTWARE",
+        description:
+          "We specialize in developing custom hardware solutions that seamlessly integrate with software, providing you with the tools you need to innovate and stay ahead.",
+      },
+      {
+        number: "03",
+        title: "Website/App Design & Development",
+        description:
+          "Whether you're looking for an e-commerce platform, a dynamic corporate website, or a cutting-edge mobile app, we've got you covered with our web and app development services.",
+      },
+      {
+        number: "04",
+        title: "Prototype",
+        description: "Dummy Text",
+      },
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col sm:flex-row justify-between items-start border-t border-gray-300 pt-4"
+      >
+        <div className="flex items-start space-x-4">
+          <div className="flex flex-col items-center">
+            <span className="text-xl sm:text-2xl pt-10 font-bold">
+              {service.number}
+            </span>
+            <div className="border-l-2 border-gray-300 h-full"></div>
+          </div>
+          <div className="ml-4 flex-1">
+            <h2 className="text-lg sm:text-xl pt-10 font-bold">{service.title}</h2>
+            <p className="text-sm">{service.description}</p>
           </div>
         </div>
-        <div
-          className="snap-start grid w-screen h-screen place-items-center text-8xl"
-          style={{
-            backgroundImage: "url('publicassetsdelta.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: `url(${backgroundImage3.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className="flex justify-center items-center h-screen">
-              <div className="px-10 sm:px-8 flex flex-col gap-5 lg:w-6/6">
-                <h2
-                  className="text-3xl md:text-4xl pl-80 lg:text-5xl text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Delta Robot
-                </h2>
-                <h2
-                  className="text-base md:text-bse pl-80 lg:text-base text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Unleashing Speed and Accuracy with Delta Robotics
-                </h2>
-                <div className="pl-80 ">
-                  <a href="/delta-robotics">
-                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                    Know more
-                  </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="pt-10">
+          <a href="#contactUs">
+            <button className="bg-black text-white p-2 px-4 text-xs sm:text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-2 font-inter font-medium flex items-center space-x-2">
+              <span>Contact us</span>
+            </button>
+          </a>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-        <div
-          className="snap-start grid w-screen h-screen place-items-center text-8xl"
-          style={{
-            backgroundImage: "url('public/assets/dlvr.png.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: `url(${backgroundImage4.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className="flex justify-center items-center h-screen">
-              <div className="px-10 sm:px-8 flex flex-col gap-5 lg:w-6/6">
-                <h2
-                  className="text-3xl md:text-4xl pl-80 lg:text-5xl text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  DLVR
-                </h2>
-                <h2
-                  className="text-base md:text-bse pl-80 lg:text-base text-white font-medium font-poppins"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Friend Of Last Mile Drivers
-                  Bringing Smiles back.(Delivery bag)
-                </h2>
-                <div className="pl-80 ">
-                  <a href="/dlvr">
-                  <button className="bg-white text-black p-5 px-9 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                    Know more
-                  </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-     <div
-            id="services"
-            className="snap-start grid w-screen h-screen place-items-start text-8xl"
-            style={{ backgroundColor: "white" }}
-          >
-            <div className="space-y-8 pl-20 pt-5 ">
-             {/*  <h1 className="text-4xl font-bold mt-10 pl-30 animate-bounce">
-                Our Services
-              </h1> */}
-              <span
-                    role="heading"
-                    style={{
-                      fontSize: "0.3em",
-                      display: "inline-block",
-                      lineHeight: "1.8",
-                      color: "black",
-                    }}
-                  >
-               {" "}
-                    <span style={{ color: "black", fontWeight: "" }}>
-                      {text2}
-                    </span>
-                    <Cursor />
-                  </span>
-
-              {[
-                {
-                  number: "01",
-                  title: "Product Design & Development",
-                  description:
-                    "From conceptualization to market-ready prototypes, we ensure that every step of the design and development process is meticulously executed.",
-                },
-                {
-                  number: "02",
-                  title: "Embedded Hardware & SOFTWARE",
-                  description:
-                    "We specialize in developing custom hardware solutions that seamlessly integrate with software, providing you with the tools you need to innovate and stay ahead.",
-                },
-                {
-                  number: "03",
-                  title: "Website/App Design & Development",
-                  description:
-                    "Whether you're looking for an e-commerce platform, a dynamic corporate website, or a cutting-edge mobile app, we've got you covered with our web and app development services.",
-                },
-                {
-                  number: "04",
-                  title: "Prototype",
-                  description: "Dummy Text",
-                },
-              ].map((service, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between items-center border-t border-gray-300 pt-4"
-                >
-                  <div className="flex space-x-4 items-start">
-                    <div className="flex flex-col items-center">
-                      <span className="text-2xl font-bold">
-                        {service.number}
-                      </span>
-                      <div className="border-l-2 border-gray-300 h-full"></div>
-                    </div>
-                    <div>
-                      <h2 className="text-xl font-bold">{service.title}</h2>
-                      <p className="text-sm">{service.description}</p>
-                    </div>
-                  </div>
-                  <a href="#contactUs">
-                  <button className="bg-black text-white p-3 px-5 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                    <span>Contact us</span>
-                    <span>→</span>
-                  </button>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
         <div
           id="contactUs"
           className="snap-start grid w-screen h-screen place-items-start text-8xl"

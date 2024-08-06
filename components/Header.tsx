@@ -61,9 +61,9 @@ const Header: React.FC = () => {
             </button>
             {showDropdown && <DropdownMenu />}
           </div>
-          <Link href="#services" className="text-gray-700 hover:text-gray-900">Services</Link>
+          <Link href="/#services" className="text-gray-700 hover:text-gray-900">Services</Link>
           <Link href="/about-us" className="text-gray-700 hover:text-gray-900">About Us</Link>
-          <Link href="#contactUs" className="bg-white text-black p-2 px-5 text-xs rounded-full hover:bg-black hover:text-white border-2 border-black">Contact Us</Link>
+          <Link href="/#contactUs" className="bg-white text-black p-2 px-5 text-xs rounded-full hover:bg-black hover:text-white border-2 border-black">Contact Us</Link>
         </nav>
         <div className="md:hidden">
           <button
@@ -79,10 +79,10 @@ const Header: React.FC = () => {
       </div>
       {isOpen && (
         <nav className="md:hidden bg-white shadow-md font-inter">
-          <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Page</Link>
-          <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Page</Link>
-          <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Page</Link>
-          <Link href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
+          
+          <Link href="/#services" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Services</Link>
+          <Link href="/about-us" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">About Us</Link>
+          <Link href="/#contactUs" onClick={toggleMenu} className="block px-4 py-2 text-gray-700 hover:text-gray-900">Contact Us</Link>
 
         </nav>
       )}

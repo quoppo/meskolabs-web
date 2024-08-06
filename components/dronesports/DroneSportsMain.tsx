@@ -71,7 +71,7 @@ const Main2: React.FC = () => {
   return (
     <div>
       <script src="https://cdn.tailwindcss.com"></script>
-      <div>
+    
         <div className="snap-y snap-mandatory h-screen w-screen mx:auto overflow-x-hidden">
           {/*  */}
           <div
@@ -113,10 +113,7 @@ const Main2: React.FC = () => {
       And a subheading describing your site, too
     </p> */}
 
-                  <div className="pr-80">
-                    <button className="bg-white text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                      Know more
-                    </button>
+                  
                   </div>
                 </div>
               </div>
@@ -202,7 +199,7 @@ const Main2: React.FC = () => {
             </div>
           </div>
 
-          <div className="snap-start grid w-screen h-screen place-items-center text-8xl">
+          <div className="snap-start grid w-screen place-items-center text-8xl">
             <div className="flex pt-20 w-screen">
               <div className="w-1/2">
                 <video className="w-full " controls autoPlay muted>
@@ -221,23 +218,29 @@ const Main2: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="text-left">
+            <div className="flex flex-col lg:flex-row justify-between items-start p-5 lg:p-10 "> {/* Added margin-top */}
+            <div className="text-left lg:w-4/6">
               <h2
-                className="h-screen lg:w-4/6 pt-5 text-base md:text-base lg:text-base text-black font-medium font-poppins pl-5"
+                className="text-base md:text-lg lg:text-xl text-black font-medium font-poppins"
                 role="heading"
                 style={{ lineHeight: 1.8 }}
               >
-                Unleashing cutting-edge technology for thrilling aerial
-                competitions, where two teams control nimble quadcopter drones.
-                Maneuver through a netted arena and aim for vertical hoops to
-                score.
+                Unleashing cutting-edge technology for thrilling aerial competitions,
+                where two teams control nimble quadcopter drones. Maneuver through a
+                netted arena and aim for vertical hoops to score.
               </h2>
             </div>
+            <div className="flex items-center justify-center lg:items-end lg:pr-20 pt-5 lg:pt-0">
+              <button className="text-base bg-black text-white rounded-full pl-3 py-2 px-6 whitespace-nowrap hover:bg-gray-800 transition-colors duration-300">
+                Join/Reach Out
+              </button>
+            </div>
+          </div>
            
           </div>
         </div>
-      </div>
-    </div>
+  
+
   );
 };
 

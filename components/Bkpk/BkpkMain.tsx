@@ -115,13 +115,7 @@ const Main2: React.FC = () => {
                   {/* <p className="text-gray-500 text-lg font-inter"> */}
                   {/* And a subheading describing your site, too                   */}
                   {/* </p> */}
-                  <div className="pr-80 ">
-                  <a href="/dlvr">
-                    <button className="bg-white  text-black p-5 px-10 text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-1 font-inter font-medium">
-                      Know more
-                    </button>
-                    </a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
