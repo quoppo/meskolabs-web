@@ -386,7 +386,7 @@ const Main: React.FC = () => {
         <div className="pt-10">
           <a href="#contactUs">
             <button className="bg-black text-white p-2 px-4 text-xs sm:text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-2 font-inter font-medium flex items-center space-x-2">
-              <span>Contact us</span>
+              <span>Contact Us</span>
             </button>
           </a>
         </div>
