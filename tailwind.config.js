@@ -17,9 +17,14 @@ module.exports = {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        slideIn2: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
       animation: {
         slideIn: 'slideInRight 1s ease-out',
+        slideIn2: 'slideIn2 1s ease-out',
       },
     
     },
