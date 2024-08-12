@@ -97,27 +97,9 @@ const Main2: React.FC = () => {
                 justifyContent: "center",
               }}
             >
-              <div className="flex pr-80 items-center h-screen">
-                <div className="pt-2">
-                  <h3
-                    className="justify-start  text-xl md:text-xl lg:text-xl pr-80 text-white font-medium font-poppins"
-                    style={{ lineHeight: "2.4" }}
-                    role="heading"
-                  >
-                    A project by Meskolabs and Xcompany’s visionary
-                    collaboration
-                  </h3>
-
-                  {/* Uncomment the following lines if you want to add a subheading */}
-                  {/* <p className="text-gray-500 text-lg font-inter">
-      And a subheading describing your site, too
-    </p> */}
-
-                  
-                  </div>
-                </div>
-              </div>
+              </div>            
             </div>
+            
           </div>
 
           <div
@@ -147,7 +129,7 @@ const Main2: React.FC = () => {
               <div className="flex justify-start items-start h-screen">
                 <div className="flex flex-col pl-5">
                   <h2
-                    className="text-3xl md:text-4xl lg:text-5xl text-black font-medium font-poppins whitespace-nowrap pt-5 pl-5"
+                    className="text-3xl md:text-4xl lg:text-5xl text-black font-medium font-poppins whitespace-nowrap pt-7 pl-5"
                     style={{ lineHeight: "1.6" }}
                     role="heading"
                   >
@@ -158,7 +140,7 @@ const Main2: React.FC = () => {
 
                 <div className="flex flex-col  top-3 right-0">
                   <h2
-                    className=" pl-11 pt-5  pr-5 text-base md:text-base lg:text-base text-black font-medium font-poppins whitespace-normal text-justify "
+                    className=" pl-11 pt-10  pr-5 text-base md:text-base lg:text-base text-black font-medium font-poppins whitespace-normal text-justify "
                     style={{ lineHeight: "1.9" }}
                     role="heading"
                   >
@@ -232,7 +214,7 @@ const Main2: React.FC = () => {
             </div>
             <div className="flex items-center justify-center lg:items-end lg:pr-20 pt-5 lg:pt-0">
               <button className="text-base bg-black text-white rounded-full pl-3 py-2 px-6 whitespace-nowrap hover:bg-gray-800 transition-colors duration-300">
-                Join/Reach Out
+                Join / Reach Out
               </button>
             </div>
           </div>

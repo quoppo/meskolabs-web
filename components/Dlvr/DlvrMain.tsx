@@ -82,15 +82,10 @@ const Main2: React.FC = () => {
   className="bg-cover bg-center bg-no-repeat w-screen h-screen flex items-center justify-center"
   style={{ backgroundImage: `url(${backgroundImage.src})` }}
 >
-  <div className="flex flex-col items-center text-center p-4 md:p-8 lg:p-16">
-    <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-medium font-poppins leading-relaxed mb-4">
+  <div className="">
+    <h3 className="text-xl text-black font-medium font-poppins leading-relaxed mb-4">
       A project by Meskolabs and Xcompany’s visionary collaboration
     </h3>
-
-    {/* Uncomment the following lines if you want to add a subheading */}
-    {/* <p className="text-gray-500 text-sm md:text-base lg:text-lg font-inter mb-4">
-      And a subheading describing your site, too
-    </p> */}
 
    
   </div>
