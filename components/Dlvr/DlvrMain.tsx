@@ -7,9 +7,9 @@ const Main2: React.FC = () => {
   const backgroundImage = "/assets/Dlvr/banner1.png";
 
   const ImageCardList = () => {
-    const image1 = "/assets/dlvr/banner3.png";
-    const image2 = "/assets/dlvr/banner4.png";
-    const image3 = "/assets/dlvr/banner5.png";
+    const image1 = "/assets/Dlvr/banner3.png";
+    const image2 = "/assets/Dlvr/banner4.png";
+    const image3 = "/assets/Dlvr/banner5.png";
 
     return (
       <div className="flex justify-center items-start space-x-3">
@@ -74,7 +74,7 @@ const Main2: React.FC = () => {
 
           <div className="flex justify-center items-center w-full md:mt-0">
             <img
-              src="/assets/dlvr/banner2.png"
+              src="/assets/Dlvr/banner2.png"
               alt="Descriptive Alt Text"
               className="w-full md:w-3/4 h-auto object-contain"
             />
