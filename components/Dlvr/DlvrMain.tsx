@@ -10,7 +10,7 @@ import backgroundImage6 from "../../public/assets/modha/banner6.gif";
 import image1 from "../../public/assets/Dlvr/banner3.png";
 import image2 from "../../public/assets/Dlvr/banner3.png";
 
-import Header from "../Header";
+
 
 interface ImageCardProps {
   image: string; // Assuming 'image' is a string (path to the image)
