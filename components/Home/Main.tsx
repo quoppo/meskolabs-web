@@ -175,7 +175,7 @@ const Main: React.FC = () => {
         style={{ lineHeight: "1.2" }}
         role="heading"
       >
-        A project by Mesckolabs and XCompany's visionary collaboration
+        A project by Mesckolabs and Drone Sports India's visionary collaboration
       </h2>
       <div className="mt-6 text-left lg:pl-20 xl:pl-40">
         <a href="/kequel">

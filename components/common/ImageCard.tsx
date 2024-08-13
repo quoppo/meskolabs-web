@@ -1,16 +1,21 @@
+// components/ImageCard.tsx
+
 import React from "react";
-import Image from "next/image";
 
 interface ImageCardProps {
-  imgPath: string; // image URL/path
-  width: number; // width of the image
-  height: number; // height of the image
+  image: string;
+  title: string;
+  description: string;
 }
 
-const ImageCard: React.FC<ImageCardProps> = ({ imgPath, width, height }) => {
+const ImageCard: React.FC<ImageCardProps> = ({ image, title, description }) => {
   return (
-    <div className="p-3 sm:p-5">
-      <Image src={imgPath} alt="project-image" width={width} height={height} />
+    <div className="w-full h-full flex flex-col justify-between max-w-sm overflow-hidden mx-auto mb-8">
+      <img className="w-full" src={image} alt={title} />
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{title}</div>
+        <p className="text-gray-700 text-base">{description}</p>
+      </div>
     </div>
   );
 };
