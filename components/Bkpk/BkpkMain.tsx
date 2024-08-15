@@ -1,245 +1,152 @@
 "use client";
 
 import React from "react";
-import backgroundImage from "../../public/assets/bkpk/banner1.png";
-import backgroundImage2 from "../../public/assets/bkpk/banner2.png";
-import backgroundImage3 from "../../public/assets/modha/banner3.png";
-import backgroundImage4 from "../../public/assets/modha/banner4.png";
-import backgroundImage5 from "../../public/assets/modha/banner5.png";
-import backgroundImage6 from "../../public/assets/modha/banner6.gif";
-import image1 from "../../public/assets/Dlvr/banner3.png";
-import image2 from "../../public/assets/Dlvr/banner3.png";
-import image3 from "../../public/assets/Dlvr/banner3.png";
+import ReactDOM from 'react-dom';
+import Footer from "@/components/Footer";
 
-import { useState } from "react";
-import Header from "../Header";
-
-interface ImageCardProps {
-  image: string; // Assuming 'image' is a string (path to the image)
-  title: string;
-  description: string;
-}
+import ImageCard from "../common/ImageCard"; // Adjust the path as necessary
 
 const Main2: React.FC = () => {
-  const [loading, setLoading] = useState(false);
+  const backgroundImage = "/assets/bkpk/banner1.png";
 
-  async function handleSubmit(event: any) {
-    event.preventDefault();
-    setLoading(true);
-  }
-  const ImageCard: React.FC<ImageCardProps> = ({
-    image,
-    title,
-    description,
-  }) => {
-    return (
-      <div className="w-full h-full flex flex-col justify-between max-w-sm  overflow-hidden  mx-auto mb-8 ">
-        <img className="w-full" src={image} alt={title} />
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-gray-700 text-base">{description}</p>
-        </div>
-      </div>
-    );
-  };
-
-  const ImageCardList = () => {
-    // Example images (replace with your actual image paths)
-    const image1 = "/assets/bkpk/banner3.png";
-    const image2 = "/assets/bkpk/banner4.png";
-
-    const image3 = "/assets/bkpk/banner5.png";
-
-    return (
-      <div className="flex justify-center items-start space-x-8">
-        <ImageCard
-          image={image1}
-          title=""
-          description="The modular nature allows for quick swapping of different end effectors to adapt the robot for various applications"
-        />
-
-        <ImageCard
-          image={image2}
-          title=""
-          description="The carbon fiber in delta robot’s arm offers a high strength-to-weight ratio."
-        />
-
-        <ImageCard
-          image={image3}
-          title=""
-          description="Offers a flexible structure and accurate placement of the end effector."
-        />
-      </div>
-    );};
+  const cardsData = [
+    {
+      imagePath: "/assets/bkpk/banner3.png",
+      description: "Secured with three locks to prevent the bag from falling."
+    },
+    {
+      imagePath: "/assets/bkpk/banner4.png",
+      description: "The front, it's attached to the footrest."
+    },
+    {
+      imagePath: "/assets/bkpk/banner5.png",
+      description: "Open the side zippers to retrieve the parcels."
+    }
+  ];
 
   return (
     <div>
       <script src="https://cdn.tailwindcss.com"></script>
-      <div>
-        <div className="snap-y snap-mandatory h-screen w-screen mx:auto overflow-x-hidden">
-          {/*  */}
-          <div
-            className="snap-start grid w-screen h-screen place-items-center text-8xl"
-            style={{
-              backgroundImage: "url('publicassets\bkpk\banner1.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div
-              style={{
-                // use the src property of the image object
-                backgroundImage: `url(${backgroundImage.src})`,
-                // other styles
-                backgroundPosition: "center",
-                backgroundSize: "100%",
-                backgroundRepeat: "no-repeat",
-                width: "100vw",
-                height: "100vh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div className="flex pr-80 items-center h-screen">
-                <div className="">
-                  <h3
-                    className="text-xl md:text-xl lg:text-xl pr-80 text-white font-medium font-poppins"
-                    style={{ lineHeight: "2.4" }}
-                    role="heading"
-                  >
-                    Friend Of Last Mile Drivers Bringing Smiles back.(Delivery
-                    bag)
-                  </h3>
+      <div className=" h-screen w-screen mx:auto overflow-x-hidden">
+        {/* First Section */}
+       
+        <div
+  className="bg-cover bg-center bg-no-repeat w-screen h-full flex items-start pl-8"
+  style={{ backgroundImage: `url(${backgroundImage})` }}
+>
+  <div className="text-left pt-60 pl-4 md:pl-20">
+    <h2 className="text-8xl text-white font-bold font-poppins mb-2">
+      DLVR
+    </h2>
+    <h3 className="text-xl text-white font-medium font-poppins leading-relaxed mb-4">
+    Friend Of Last Mile Drivers <br/>
+Bringing Smiles back.(Delivery bag)
+    </h3>
+  </div>
+</div>
 
-                  {/* <p className="text-gray-500 text-lg font-inter"> */}
-                  {/* And a subheading describing your site, too                   */}
-                  {/* </p> */}
-                 
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div
-            className="snap-start grid w-screen h-screen place-items-center text-8xl"
-            style={{
-              backgroundImage: "url('publicassets\bkpk\banner2.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div
-              className=" object-cover "
-              style={{
-                // use the src property of the image object
-                backgroundImage: `url(${backgroundImage2.src})`,
-                // other styles
-                backgroundPosition: "center",
-                backgroundSize: "90%",
-                backgroundRepeat: "no-repeat",
-                width: "100vw",
-                height: "100vh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div className="flex justify-start items-start h-screen ">
-                <div className="flex flex-col pl-2">
-                  <h2
-                    className="text-3xl pl-10 md:text-4xl lg:text-5xl text-black font-medium font-poppins whitespace-nowrap"
-                    style={{ lineHeight: "2.0" }}
-                    role="heading"
-                  >
-                    We believe in Smart Living
-                  </h2>
-                </div>
 
-                <div className="flex flex-col  top-0 right-0">
-                  <h2
-                    className=" pl-12 pr-20 pb-40 pt-5 text-base md:text-base lg:text-base text-black font-medium font-poppins whitespace-normal text-justify "
-                    style={{ lineHeight: "1.9" }}
-                    role="heading"
-                  >
-                    Why settle for furniture that is made for someone else?
-                    Discover the future of living with our smart furniture,
-                    seamlessly integrating technology and style to elevate your
-                    home.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="snap-start grid w-screen h-screen place-items-center text-8xl">
-            <div className="justify-items-start h-screen">
-              <div className="  lg:w-4/6">
-                <h2
-                  className="pt-3 text-2xl md:text-2xl  lg:text-2xl text-black font-medium font-poppins content-start pl-10"
-                  style={{ lineHeight: "1.2" }}
-                  role="heading"
-                >
-                  Discover Innovation in Flight: Our Precision-Driven Drone Hoop
-                  Showdown
+        {/* Second Section */}
+        <div className="grid w-screen place-items-start pt-5  text-8xl">
+   
+            <div className="w-full flex flex-col md:flex-row items-center md:items-start">
+              <div className="w-full  flex flex-col md:flex-row md:space-x-4">
+                <h2 className="text-3xl font-chivo md:text-5xl pl-10 pr-5 pt-5 w-full md:w-1/2 tracking-wider">
+                Reliable Protection for <br/> Every Delivery
                 </h2>
-                <h2
-                  className=" pt-5 text-base md:text-bse lg:text-base text-black font-medium font-poppins pl-10"
-                  style={{ lineHeight: "1.4" }}
-                  role="heading"
-                >
-                  Unleashing cutting-edge technology for thrilling aerial
-                  competitions, where two teams control nimble quadcopter
-                  drones. Maneuver through a netted arena and aim for vertical
-                  hoops to score.
-                </h2>
-                {/* <p className="text-gray-500 text-lg font-inter"> */}
-                {/* And a subheading describing your site, too                   */}
-                {/* </p> */}
-              </div>
-              <div className="flex justify-center items-center space-x-8 mt-8">
-                <ImageCardList />
+                <p className="text-lg font-chivo pl-10  pr-5 font-light text-black pt-5 md:w-1/2 mt-4 md:mt-0 tracking-wider">
+                Experience the next level of convenience with our delivery bags, <br/>blending rugged durability with sleek design to redefine your transport <br/> needs.
+                </p>
               </div>
             </div>
-          </div>
 
-          
-          <div className="snap-start grid w-screen h-screen place-items-center text-8xl">
-            <div className="flex pt-20 w-screen">
-              <div className="w-1/2">
-                <video className="w-full " controls autoPlay muted>
-                  <source src="/assets/bkpk/vid4.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
 
-              <div className="w-1/2 flex items-center justify-center">
-                <div className="relative w-full h-0 pb-[56%] aspect-w-16 aspect-h-9">
-                  <img
-                    src="/assets/bkpk/banner5.png"
-                    alt="Your image description"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="text-left">
-              <h2
-                className="h-screen lg:w-4/6 pt-5 text-base md:text-base lg:text-base text-black font-medium font-poppins pl-5"
-                role="heading"
-                style={{ lineHeight: 1.8 }}
-              >
-                Unleashing cutting-edge technology for thrilling aerial
-                competitions, where two teams control nimble quadcopter drones.
-                Maneuver through a netted arena and aim for vertical hoops to
-                score.
-              </h2>
-            </div>
-          
-
+          <div className="flex justify-center pt-5 items-start w-full md:mt-0">
+            <img
+              src="/assets/bkpk/banner2.png"
+              alt="Descriptive Alt Text"
+              className="w-full p-10 h-auto object-contain"
+            />
           </div>
         </div>
+
+        {/* Third Section */}
+        <div className="grid  place-items-start text-8xl p-4">
+  <div className="w-full">
+    <div className="px-4 lg:px-10 pr-6 md:pr-8 lg:pr-12">
+      <h2
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black font-regular pr-0 sm:pr-2 md:pr-4 lg:pr-6 font-Chivo text-left"
+        style={{ lineHeight: "1.2" }}
+        role="heading"
+      >
+        Elevate Your Delivery Experience  
+      </h2>
+      <h2
+        className="pt-3 sm:pt-4 md:pt-5 text-sm sm:text-2xl md:text-3xl lg:text-xl text-black font-light font-chivo text-left"
+        style={{ lineHeight: "1.4" }}
+        role="heading"
+      >
+        Our cutting-edge delivery bags blend robust performance with sleek design, setting a new standard in safe and <br/>stylish transport.
+      </h2>
+    </div>
+    <div className="container mx-auto ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-5 gap-4">
+        {cardsData.map((card, index) => (
+          <ImageCard 
+            key={index}
+            imagePath={card.imagePath} 
+            altText={`Image ${index + 1}`} 
+            description={card.description} 
+          />
+        ))}
       </div>
     </div>
+  </div>
+</div>
+
+{/* Fourth Section */}
+<div className="grid place-items-center text-8xl">
+  <div className="flex flex-col w-screen pl-11 pr-11 lg:flex-row">
+    <div className="w-full lg:w-1/2 mb-5 lg:mb-0">
+      <video className="w-full" controls loop autoPlay muted>
+        <source src="/assets/bkpk/vid4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div className="w-full lg:w-1/2 flex items-center justify-center">
+      <div className="relative w-full h-0 pb-[56%] aspect-w-16 aspect-h-9">
+        <img
+          src="/assets/bkpk/banner6.png"
+          alt="Your image description"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div className="w-full flex flex-col lg:flex-row justify-between items-center pl-11 pr-11 text-2xl pb-20 mt-5">
+  <p className="text-center lg:text-left">
+  Our thoughtfully designed delivery bag combines durability, functionality, and convenience, making your <br/>daily deliveries smoother and more efficient.
+  </p>
+  <button className="bg-black text-white py-3 px-6 rounded-full text-2xl mt-5 lg:mt-0 lg:ml-5">
+  Join/Reach Out
+  </button>
+</div>
+
+</div>
+
+
+  </div>
+
+  <Footer/>
+</div>
+
+
+
+     
+    
   );
 };
 

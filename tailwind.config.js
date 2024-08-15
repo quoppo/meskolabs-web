@@ -11,6 +11,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        chivo: ['Chivo', 'sans-serif'],
       },
       keyframes: {
         slideIn: {
