@@ -80,7 +80,7 @@ const Main: React.FC = () => {
             <source src="/bgvid.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="flex pt-60 flex-col items-start sm:h-screen px-5 sm:px-12">
+          <div className="flex pt-60 flex-col items-start\ sm:h-screen px-5 sm:px-12">
   <div className="text-3xl md:text-4xl lg:text-5xl font-medium font-poppins pr-0 sm:pr-60 ">
     <span
       role="heading"
@@ -164,18 +164,18 @@ const Main: React.FC = () => {
   >
     <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        className="text-3xl whitespace-nowrap sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40 p-5"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
         Drone Sports India
       </h2>
       <h2
-        className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        className="text-base whitespace-nowrap sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40 pr-20 pl-10"
         style={{ lineHeight: "1.2" }}
         role="heading"
       >
-        A project by Mesckolabs and Drone Sports India's visionary collaboration
+        A project by Mesckolabs and Drone Sports India's <br/> visionary collaboration
       </h2>
       <div className="mt-6 text-left lg:pl-20 xl:pl-40">
         <a href="/kequel">
@@ -209,18 +209,18 @@ const Main: React.FC = () => {
   >
     <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        className="text-3xl whitespace-nowrap sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
-        Kequel (Smart Bedside Table)
+        Kequel <br/> (Smart Bedside Table)
       </h2>
       <h2
-        className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        className="text-base whitespace-nowrap sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
-        Redefining Smart Functionality and Customization for Modern Lifestyles
+        Redefining Smart Functionality and <br/> Customization for Modern Lifestyles
       </h2>
       <div className="mt-6 text-left lg:pl-20 xl:pl-40">
         <a href="/kequel">
@@ -252,18 +252,18 @@ const Main: React.FC = () => {
   >
     <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
       <h2
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        className="text-3xl whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
         Delta Robot
       </h2>
       <h2
-        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
+        className="text-base  whitespace-nowrap sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
-        Unleashing Speed and Accuracy with Delta Robotics
+        Unleashing Speed and Accuracy with <br/> Delta Robot
       </h2>
       <div className="mt-6 text-left lg:pl-20 xl:pl-40">
         <a href="/delta-robotics">
@@ -295,14 +295,14 @@ const Main: React.FC = () => {
   >
     <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
       <h2
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
+        className="text-3xl  whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
         DLVR
       </h2>
       <h2
-        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins text-left mt-4 lg:pl-20 xl:pl-40"
+        className="text-base whitespace-nowrap sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins text-left mt-4 lg:pl-20 xl:pl-40"
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
@@ -327,12 +327,12 @@ const Main: React.FC = () => {
   id="services"
   className="snap-start grid w-screen h-screen place-items-start text-8xl bg-white overflow-y-auto"
 >
-  <div className="space-y-8 px-4 sm:px-8 md:px-16 lg:px-16 xl:px-24 pt-5">
+  <div className="space-y-10 px-8 sm:px-8 md:px-16 lg:px-16 xl:px-24 pt-5">
     <span
       role="heading"
       className="text-xl md:text-sm lg:text-base xl:text-lg"
       style={{
-        lineHeight: "1.8",
+        lineHeight: "2.4",
         color: "black",
       }}
     >
@@ -378,12 +378,12 @@ const Main: React.FC = () => {
             </span>
             <div className="border-l-2 border-gray-300 h-full"></div>
           </div>
-          <div className="ml-4 flex-1">
+          <div className=" flex-1">
             <h2 className="text-lg sm:text-xl pt-10 font-bold">{service.title}</h2>
             <p className="text-sm">{service.description}</p>
           </div>
         </div>
-        <div className="pt-10">
+        <div className="pt-10 pl-40">
           <a href="#contactUs">
             <button className="bg-black text-white p-2 px-4 text-xs sm:text-sm rounded-full hover:bg-white hover:text-black border-2 border-white mt-2 font-inter font-medium flex items-center space-x-2">
               <span>Contact Us</span>
