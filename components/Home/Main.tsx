@@ -68,7 +68,7 @@ const Main: React.FC = () => {
 
   return (
   
-      <div className="snap-y snap-mandatory h-screen w-screen  overflow-x-hidden">
+      <div className="snap-y snap-mandatory h-screen w-screen no-scrollbar  overflow-x-hidden">
    
         <div className="snap-start relative w-screen h-screen grid place-items-center">
           <video
