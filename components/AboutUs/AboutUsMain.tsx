@@ -5,7 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Slider from "react-slick";
 import { ContactForm } from "../common/contactForm";
 import backgroundImage4 from "../../public/assets/bg5.png"
-
+import Footer from "@/components/Footer";
 import backgroundImage from "../../public/assets/dronesports.png";
 import backgroundImage2 from "../../public/assets/kequel.png";
 import backgroundImage3 from "../../public/assets/delta.png";
@@ -263,6 +263,7 @@ const Main: React.FC = () => {
           </section>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

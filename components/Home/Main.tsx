@@ -7,11 +7,12 @@ import backgroundImage from "../../public/assets/dronesports.png";
 import backgroundImage2 from "../../public/assets/kequel.png";
 import backgroundImage3 from "../../public/assets/delta.png";
 import backgroundImage4 from "../../public/assets/dlvr.png";
+import Footer from "@/components/Footer";
 
 const Main: React.FC = () => {
 
   
-  const [text] = useTypewriter({
+  const [text1] = useTypewriter({
     words: [
       "web & app development",
       "embedded hardware services",
@@ -19,10 +20,12 @@ const Main: React.FC = () => {
       "prototyping",
     ],
     loop: true,
-    typeSpeed: 50,
+    typeSpeed: 70,   // Increased for better visibility
     deleteSpeed: 50,
-    delaySpeed: 1000,
+    delaySpeed: 1000, // Adequate delay to ensure visibility of each word
   });
+  
+
   const [text2] = useTypewriter({
     words: [
       "Our services",
@@ -66,7 +69,7 @@ const Main: React.FC = () => {
   return (
   
       <div className="snap-y snap-mandatory h-screen w-screen  overflow-x-hidden">
-        <div>
+   
         <div className="snap-start relative w-screen h-screen grid place-items-center">
           <video
             autoPlay
@@ -80,8 +83,8 @@ const Main: React.FC = () => {
             <source src="/bgvid.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="flex pt-60 flex-col items-start\ sm:h-screen px-5 sm:px-12">
-  <div className="text-3xl md:text-4xl lg:text-5xl font-medium font-poppins pr-0 sm:pr-60 ">
+          <div className="flex min-h-screen flex-col justify-center items-start px-5 sm:px-12">
+  <div className="text-3xl md:text-4xl lg:text-5xl font-medium font-poppins pr-0 sm:pr-60">
     <span
       role="heading"
       style={{
@@ -93,7 +96,7 @@ const Main: React.FC = () => {
     >
       Transforming organisations with our comprehensive solutions in the form of{" "}
       <span style={{ color: "darkblue", fontWeight: "bold" }}>
-        {text}
+        {text1}
       </span>
       <Cursor />
     </span>
@@ -105,46 +108,9 @@ const Main: React.FC = () => {
   </div>
 </div>
 
-        </div>
-        {/* <div
-  className="snap-start grid w-screen h-screen bg-cover bg-center"
-  style={{
-    backgroundImage: "url('/public/assets/dronesports.png')",
-  }}
->
-  <div
-    className="w-full h-full flex items-center justify-center bg-cover bg-center"
-    style={{
-      backgroundImage: `url(${backgroundImage.src})`,
-      backgroundRepeat: "no-repeat",
-    }}
-  >
-    <div className="flex flex-col justify-center items-start w-full max-w-screen-lg h-full p-4 sm:p-6 md:p-8 lg:p-10">
-      <h2
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40"
-        style={{ lineHeight: "1.4" }}
-        role="heading"
-      >
-        Drone Sports India
-      </h2>
-      <h2
-        className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40"
-        style={{ lineHeight: "1.4" }}
-        role="heading"
-      >
-        A project by Mesckolabs and XCompany's visionary collaboration
-      </h2>
-      <div className="mt-6 text-left lg:pl-20 xl:pl-40">
-        <a href="/dronesports">
-          <button className="bg-white text-black p-4 px-6 text-sm rounded-full hover:bg-black hover:text-white border-2 border-white font-inter font-medium">
-            Know more
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div> */}
 
+        </div>
+        
 <div
   className="snap-start grid w-screen h-screen bg-cover bg-center"
   style={{
@@ -164,14 +130,14 @@ const Main: React.FC = () => {
   >
     <div className="flex flex-col justify-center items-start p-4 sm:p-6 md:p-8 lg:p-10 max-w-lg">
       <h2
-        className="text-3xl whitespace-nowrap sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40 p-5"
+        className="text-3xl whitespace-nowrap sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium font-poppins text-left lg:pl-20 xl:pl-40 "
         style={{ lineHeight: "1.4" }}
         role="heading"
       >
         Drone Sports India
       </h2>
       <h2
-        className="text-base whitespace-nowrap sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40 pr-20 pl-10"
+        className="text-base whitespace-nowrap sm:text-lg md:text-xl lg:text-2xl text-white font-medium font-poppins mt-4 text-left lg:pl-20 xl:pl-40 "
         style={{ lineHeight: "1.2" }}
         role="heading"
       >
@@ -325,7 +291,7 @@ const Main: React.FC = () => {
 
 <div
   id="services"
-  className="snap-start grid w-screen h-screen place-items-start text-8xl bg-white overflow-y-auto"
+  className="snap-start grid w-screen  place-items-start text-8xl bg-white overflow-y-auto"
 >
   <div className="space-y-10 px-8 sm:px-8 md:px-16 lg:px-16 xl:px-24 pt-5">
     <span
@@ -398,14 +364,20 @@ const Main: React.FC = () => {
 
         <div
           id="contactUs"
-          className="snap-start grid w-screen h-screen place-items-start text-8xl"
+          className="snap-start flex-grow grid w-screen  place-items-start text-8xl"
           style={{ backgroundColor: "white" }}
         >
-          <div className="bg-white shadow-md rounded px-6 pr-10 pt-4 pb-6 mb-4 w-full max-w-full h-full flex flex-col justify-center">
+          <div className="bg-white shadow-md rounded  w-full max-w-full  flex flex-col ">
             <ContactForm />
+         
           </div>
+ 
+        
         </div>
-        </div>
+        <div className="h-[Footer's Height]"><Footer/></div>
+
+
+        
     </div>
 
   );
