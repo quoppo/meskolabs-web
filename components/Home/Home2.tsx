@@ -17,9 +17,10 @@ const Home2: React.FC = () => {
     Our goal is to bring your vision to life
   </p>
   <div className="flex w-full flex-col">
-  <h1 className="text-white font-bold text-5xl md:text-5xl leading-tight mb-6 w-full">
-    Transforming organisations with <br/>our comprehensive solutions in the <br/> form of Product Design & Development
-  </h1>
+  <h1 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug sm:leading-tight mb-4 sm:mb-6 lg:mb-8 w-full">
+  Transforming organisations with <br/>our comprehensive solutions in the <br/> form of Product Design & Development
+</h1>
+
 </div>
 
   <button className="bg-white text-black py-3 px-20 rounded-lg hover:bg-gray-200">
@@ -36,7 +37,7 @@ const Home2: React.FC = () => {
 <div className="relative bg-[#181818] h-screen  flex items-center justify-center text-center overflow-hidden">
    
    <div className="absolute inset-0 z-0">
-       <img src="assets/midsection.png" alt="Background Image" className="w-full h-screen object-cover" />
+       <img src="assets/midsection.png" alt="Background Image" className="w-full h-100 object-cover" />
    </div>
   {/* Content */}
   <div className="grid grid-cols-1 md:grid-cols-2 relative z-10">
