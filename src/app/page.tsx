@@ -117,7 +117,7 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p className="max-w-2xl">
-          From the initial spark of an idea to the finished product, we're with
+          From the initial spark of an idea to the finished product, we&#39;re with
           you every step of the way. Our comprehensive services smooth journey
           from concept to completion.
         </p>
@@ -145,8 +145,8 @@ function Services() {
               you need to innovate and stay ahead
             </ListItem>
             <ListItem title="Website/App Design & Development">
-              whether you're looking for an e-commerce platform, a dynamic
-              corporate website, or a cutting-edge mobile app, We've got you
+              whether you&#39;re looking for an e-commerce platform, a dynamic
+              corporate website, or a cutting-edge mobile app, We&#39;ve got you
               covered with our web and app development services.
             </ListItem>
             <ListItem title="Prototype">Dummy Text</ListItem>

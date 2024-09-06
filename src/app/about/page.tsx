@@ -37,7 +37,7 @@ function Culture() {
           Our team is fully committed to delivering exceptional results, working collaboratively to turn ambitious ideas into reality, whether through innovative design or cutting-edge technology.
           </GridListItem>
           <GridListItem title="Reliability: " invert>
-           We trust in each other's skills and dedication, knowing that we work not just to meet deadlines but to exceed expectations, ensuring every project is executed with precision and care.
+           We trust in each other&#39s skills and dedication, knowing that we work not just to meet deadlines but to exceed expectations, ensuring every project is executed with precision and care.
           </GridListItem>
           <GridListItem title="Empathy: " invert>
            We understand the challenges that come with creating something extraordinary, and we stand by our partners, providing the support and understanding needed to overcome any obstacle, both in design and in development.
@@ -84,7 +84,7 @@ const team = [
       },
       {
         name: 'Yash Jangid',
-        role: 'Associate Founder’s Office',
+        role: "Associate Founder's Office",
         image: { src: imageYashJangid },
       },
       {

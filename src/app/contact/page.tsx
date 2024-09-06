@@ -79,16 +79,16 @@ function ContactForm() {
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
+                <RadioInput label="$25K - $50K" name="budget" value="25" />
+                <RadioInput label="$50K - $100K" name="budget" value="50" />
+                <RadioInput label="$100K - $150K" name="budget" value="100" />
                 <RadioInput label="More than $150K" name="budget" value="150" />
               </div>
             </fieldset>
           </div>
         </div>
         <Button type="submit" className="mt-10">
-          Let’s work together
+          Let&#39;s work together
         </Button>
       </form>
     </FadeIn>
@@ -102,7 +102,7 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
+        Prefer doing things in person? We don&#39;t but we have to list our
         addresses here for legal reasons.
       </p>
 
@@ -144,7 +144,7 @@ function ContactDetails() {
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  description: 'Lets work together. We cant wait to hear from you.',
 }
 
 export default function Contact() {
@@ -159,8 +159,8 @@ export default function Contact() {
           priority
           className="absolute inset-x-0 top-0 -z-10 h-full object-cover"
         />
-        <PageIntro eyebrow="Contact us" title="Let’s work together">
-          <p>We can’t wait to hear from you.</p>
+        <PageIntro eyebrow="Contact us" title="Lets work together">
+          <p>We cant wait to hear from you.</p>
         </PageIntro>
       </section>
 
