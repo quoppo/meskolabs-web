@@ -1,0 +1,47 @@
+import logo from './logo.svg'
+import imageHero from './hero.svg'
+import solution from './solution.svg'
+import ideation from './ideation.svg'
+import Image from 'next/image'
+
+
+export const caseStudy = {
+  client: 'Drone Sports',
+  title: 'Drone Sports', 
+  description:
+    'This project is the result of a visionary collaboration between MeskLabs and Drone Sports India. Together we are bringing innovation to life',
+  summary: [
+    'FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.',
+    'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords “Gary Vee” and “Tony Robbins”.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-10',
+  service: 'Web development, CMS',
+  
+}
+
+export const metadata = {
+  title: `${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Drone soccer, as shown in the image, is an exciting new sport that combines the thrill of soccer with the advanced technology of drones. The drones are encased in protective cages, allowing them to collide and maneuver without damage. This unique design makes the game fast-paced and highly competitive, with teams using their drones to score goals while defending their own.
+
+The sport is a result of a collaborative effort between MeskLabs and XCompany, bringing together innovation and expertise to create a new form of entertainment. The combination of cutting-edge drone technology with the strategic gameplay of soccer results in a dynamic experience for both players and spectators. The arena, with its illuminated goals and enclosed space, adds to the intensity of the matches, creating an immersive environment.
+
+Drone soccer not only offers a fun and engaging activity but also showcases the potential of drones in sports. It’s a perfect blend of technology and physical skill, where players must master both the controls of the drone and the tactics of the game. This collaboration marks the beginning of a new era in sports, where technology plays a central role in the excitement and challenge of competition.
+
+
+## Ideation
+<div className = "max-w-5xl"> 
+<Image src={ideation} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
+</div>
+
+
+## Our Solution 
+<div className = "max-w-5xl"> 
+<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
+</div>

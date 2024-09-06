@@ -1,0 +1,47 @@
+import logo from '@/app/work/Kequel/logo.svg'
+import imageHero from './hero.svg'
+import solution from './solution.svg'
+import ideation from './ideation.svg'
+import Image from 'next/image'
+
+
+export const caseStudy = {
+  client: 'Kequel',
+  title: 'Kequel', 
+  description:
+    'We’re making smart features and customization easier for today’s lifestyles. Enjoy innovation that fits right into your daily routine.',
+  summary: [
+    'FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.',
+    'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords “Gary Vee” and “Tony Robbins”.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Web development, CMS',
+  
+}
+
+export const metadata = {
+  title: `${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Creating a smart bedside table, starts with understanding what modern users need. The first step is designing features like the sunrise effect, which gradually brightens the room to wake you up gently or create a calming atmosphere. This feature is carefully designed to match the natural light patterns that help you wake up feeling refreshed.
+
+The next step is adding practical features, such as built-in charging sockets. These sockets are placed in a way that's easy to reach while keeping the table looking neat and stylish. The design team works closely with engineers to make sure everything works well and looks good at the same time, making it easy to charge your devices without any hassle.
+
+Lastly, the table is enhanced with features like a built-in aroma diffuser. This diffuser releases soothing scents to create a relaxing environment, all while being neatly integrated into the table's design. The result is a bedside table that not only meets your everyday needs but also adds a touch of comfort and modern style to your living space.
+
+
+## Ideation
+<div className = "max-w-5xl"> 
+<Image src={ideation} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
+</div>
+
+
+## Our Solution 
+<div className = "max-w-5xl"> 
+<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
+</div>

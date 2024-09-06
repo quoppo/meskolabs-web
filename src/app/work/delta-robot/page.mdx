@@ -1,0 +1,45 @@
+import logo from './logo.svg'
+import imageHero from './hero.svg'
+import solution from './solution.svg'
+import ideation from './ideation.svg'
+import Image from 'next/image'
+
+
+export const caseStudy = {
+  client: 'Delta Robot',
+  title: 'Delta Robot', 
+  description:
+    'We’re pushing the limits of speed and accuracy with Delta Robotics. Experience precision and efficiency like never before.',
+  summary: [
+    'FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.',
+    'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords “Gary Vee” and “Tony Robbins”.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Web development, CMS',
+  
+}
+
+export const metadata = {
+  title: `${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+The Delta robot,  is designed for high precision and adaptability in various applications. Its modular nature allows for quick swapping of end effectors, making it highly versatile. This capability enables the robot to seamlessly switch between different tasks, from delicate handling to more robust operations, ensuring it can be customized to meet specific industrial needs.
+
+A key feature of this Delta robot is its use of carbon fiber in the arms, providing an excellent strength-to-weight ratio. This material choice not only enhances the robot’s durability but also allows for faster movements with reduced inertia. The lightweight yet strong arms enable the robot to achieve high speeds while maintaining precise control, which is crucial for tasks that require both efficiency and accuracy.
+
+The design of the Delta robot also emphasizes flexibility and precision in the placement of its end effector. This ensures that the robot can perform tasks with a high degree of accuracy, even in complex or tight spaces. The combination of flexible structure, modularity, and the use of advanced materials like carbon fiber makes this Delta robot an ideal solution for industries that demand high performance and reliability.
+
+
+## Ideation
+<div className = "max-w-5xl"> 
+  <Image src={ideation} alt ="idiation" width={1005} height={526} priority className = "py-8 w-full h-full"/>
+</div>
+## Our Solution 
+<div className = "max-w-5xl"> 
+<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
+</div>
