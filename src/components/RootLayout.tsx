@@ -1,11 +1,5 @@
 'use client'
-import {
-  createContext,
-  useEffect,
-  useId,
-  useRef,
-  useState,
-} from 'react'
+import { createContext, useEffect, useId, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
@@ -17,6 +11,7 @@ import { Footer } from '@/components/Footer'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 import Image from 'next/image'
+import logo_black from '@/images/main_logo.svg'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -55,19 +50,31 @@ function Header({
   toggleRef: React.RefObject<HTMLButtonElement>
   invert?: boolean
 }) {
-
+  let pathname = usePathname()
 
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-        >
-          <Image src={logo_white} alt="logo" width={228} height={36} priority className=' w-28 sm:w-full h-full' />
+        <Link href="/" aria-label="Home">
+          <Image
+            src={logo_white}
+            alt="logo"
+            width={228}
+            height={36}
+            priority
+            className={`${pathname === '/contact' ? 'hidden' : 'block'}`}
+          />
+          <Image
+            src={logo_black}
+            alt="logo"
+            width={228}
+            height={36}
+            priority
+            className={`${pathname === '/contact' ? 'block' : 'hidden'}`}
+          />
         </Link>
-        <div className="flex items-center gap-x-4 sm:gap-x-8">
-          <Button href="/contact" invert={invert} className='text-xs px-2 py-[2px] sm:px-4 sm:py-1.5 '>
+        <div className="flex items-center gap-x-8">
+          <Button href="/contact" invert={invert}>
             Contact us
           </Button>
           <button
@@ -86,8 +93,9 @@ function Header({
               className={clsx(
                 'h-6 w-6',
                 invert
-                  ? 'fill-white group-hover:fill-neutral-200'
+                  ? 'fill-black group-hover:fill-neutral-200'
                   : 'fill-white group-hover:fill-neutral-700',
+                pathname === '/contact' ? 'fill-black' : '',
               )}
             />
           </button>
@@ -163,9 +171,9 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <header >
+      <header>
         <div
-          className="bg-bl absolute left-0 right-0 top-2 z-40 md:py-10 "
+          className="absolute left-0 right-0 top-2 z-40 pt-2 sm:pt-14"
           aria-hidden={expanded ? 'true' : undefined}
           // @ts-ignore (https://github.com/facebook/react/issues/17157)
           inert={expanded ? '' : undefined}
@@ -237,19 +245,9 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 
       <motion.div
         layout
-        // style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
         className="relative flex flex-auto overflow-hidden bg-white"
       >
         <motion.div layout className="relative isolate flex w-full flex-col">
-          {/* <Image
-            src={background}
-            alt="background image"
-            width={1728}
-            height={1042}
-            priority
-            className={`${pathname === '/' ? 'hidden' : 'absolute'} inset-x-0 top-0 -z-20 object-cover ]`}
-          /> */}
-
           <main className="w-full flex-auto">{children}</main>
 
           <Footer />

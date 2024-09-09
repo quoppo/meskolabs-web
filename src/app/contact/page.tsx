@@ -1,16 +1,10 @@
 import { useId } from 'react'
 import { type Metadata } from 'next'
-import Link from 'next/link'
-
-import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
-import { PageIntro } from '@/components/PageIntro'
-import { SocialMedia } from '@/components/SocialMedia'
-import Image from 'next/image'
-import background from '@/images/background.svg'
+
+import clsx from 'clsx'
 
 function TextInput({
   label,
@@ -98,46 +92,33 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don&#39;t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
-        </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
-          ].map(([label, email]) => (
-            <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
-              <dd>
-                <Link
-                  href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
-                >
-                  {email}
-                </Link>
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </Border>
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
-        </h2>
-        <SocialMedia className="mt-6" />
-      </Border>
+      <Container
+        className={clsx(' text-left items-start')}
+      >
+        <FadeIn>
+          <h1>
+            <span className="block font-display text-base font-semibold text-neutral-950">
+              Contact us
+            </span>
+            <span className="sr-only"> - </span>
+            <span
+              className={clsx(
+                'mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto',
+              )}
+            >
+              Let&apos;s work together
+            </span>
+          </h1>
+          <div
+            className={clsx(
+              'mt-6 max-w-3xl text-xl text-neutral-600 mx-auto',
+            )}
+          >
+            <p>We can&apos;t wait to hear from you</p>
+          </div>
+        </FadeIn>
+      </Container>
+      
     </FadeIn>
   )
 }
@@ -150,19 +131,6 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <section className="relative w-screen pt-8 sm:pt-12 md:h-screen md:pt-56">
-        <Image
-          src={background}
-          alt="background image"
-          width={1728}
-          height={1042}
-          priority
-          className="absolute inset-x-0 top-0 -z-10 h-full object-cover"
-        />
-        <PageIntro eyebrow="Contact us" title="Lets work together">
-          <p>We cant wait to hear from you.</p>
-        </PageIntro>
-      </section>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">

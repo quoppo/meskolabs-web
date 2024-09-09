@@ -4,11 +4,10 @@ import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import Image from 'next/image'
 import background from '@/images/background.svg'
-import Readmore_bg from '@/images/readmore_background.svg'
+
 
 export default async function CaseStudyLayout({
   caseStudy,
@@ -93,7 +92,7 @@ export default async function CaseStudyLayout({
 
       <ContactSection />
 
-      {moreCaseStudies.length > 0 && (
+      {/* {moreCaseStudies.length > 0 && (
         <div className="relative mt-24 flex  items-center justify-center sm:mt-32 lg:mt-40 py-5 sm:py-10">
           <Image
             src={Readmore_bg}
@@ -114,7 +113,7 @@ export default async function CaseStudyLayout({
             />
           </div>
         </div>
-      )}
+      )} */}
     </>
   )
 }

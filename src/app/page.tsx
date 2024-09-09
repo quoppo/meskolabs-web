@@ -25,7 +25,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="rounded-4xl bg-neutral-950 py-20 sm:py-32 mt-24 md:mt-0">
+    <div className="z-2 mt-5 rounded-4xl bg-neutral-950 py-20 sm:py-32 md:mt-0">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -49,6 +49,8 @@ function Clients() {
                       <Image
                         src={logo}
                         alt="Slider Image"
+                        width={256}
+                        height={48}
                         className="h-full w-full object-contain"
                         unoptimized
                       />
@@ -117,9 +119,9 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p className="max-w-2xl">
-          From the initial spark of an idea to the finished product, we&#39;re with
-          you every step of the way. Our comprehensive services smooth journey
-          from concept to completion.
+          From the initial spark of an idea to the finished product, we&#39;re
+          with you every step of the way. Our comprehensive services smooth
+          journey from concept to completion.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -163,25 +165,25 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  let caseStudies = (await loadCaseStudies())
 
   return (
     <>
-      <section className="relative md:h-screen w-screen  pt-8 sm:pt-12 md:pt-56">
+      
+      <section className="relative w-screen pt-8 sm:pt-28 md:pt-40 flex flex-col space-y-8 md:space-y-16 lg:space-y-32 text-left rounded-4xl ">
         <Image
           src={background}
           alt="background image"
-          width={1728}
-          height={1042}
+          fill
           priority
-          className="absolute inset-x-0 top-0 -z-10 object-cover"
+          className="absolute inset-x-0 top-0 -z-10 object-cover rounded-b-4xl"
         />
-        <Container className="relative ">
+        <Container className="relative w-full pb-10">
           <FadeIn className="max-w-5xl">
-            <h1 className="font-display text-lg font-medium tracking-tight text-white [text-wrap:balance] sm:text-7xl mt-4">
+            <h1 className="mt-4 font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl">
               Transforming organisations with our comprehensive solutions
             </h1>
-            <p className="mt-6 max-w-2xl text-xs text-white md:text-base">
+            <p className="mt-6 max-w-2xl text-[10px] sm:text-xs text-white md:text-base">
               Our mission is to bring your ideas to reality by offering a wide
               range of services, including product design and development,
               embedded hardware solutions, web design and development, and
@@ -189,9 +191,8 @@ export default async function Home() {
             </p>
           </FadeIn>
         </Container>
+        <Clients />
       </section>
-
-      <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
 
@@ -203,6 +204,7 @@ export default async function Home() {
       <Services />
 
       <ContactSection />
+      
     </>
   )
 }
