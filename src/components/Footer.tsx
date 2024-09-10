@@ -16,10 +16,10 @@ export function Footer() {
             <Image src={mainLogo} alt='logo' width={288} height={32} className='w-28 sm:w-full h-full ' />
           </Link>
          <div className='flex items-center justify-center gap-4'>
-          <Link href="#">
+          <Link href="https://www.instagram.com/meskolabs?igsh=NmYxN3Z1Z3Z5ZjFz">
             <Image src={instagrame_icon} alt='instagrame' priority width={37} height={37} className='w-5 h-5 sm:w-full sm:h-full' />
           </Link>
-          <Link href="#">
+          <Link href="https://www.linkedin.com/company/meskolabs/">
             <Image src={linkedin_icon} alt='linkedin' priority width={37} height={37} className='w-5 h-5 sm:w-full sm:h-full' />
           </Link>
          </div>

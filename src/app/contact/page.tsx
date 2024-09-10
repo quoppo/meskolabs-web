@@ -69,17 +69,6 @@ function ContactForm() {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K - $50K" name="budget" value="25" />
-                <RadioInput label="$50K - $100K" name="budget" value="50" />
-                <RadioInput label="$100K - $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
-              </div>
-            </fieldset>
-          </div>
         </div>
         <Button type="submit" className="mt-10">
           Let&#39;s work together
@@ -92,9 +81,7 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <Container
-        className={clsx(' text-left items-start')}
-      >
+      <Container className={clsx('items-start text-left')}>
         <FadeIn>
           <h1>
             <span className="block font-display text-base font-semibold text-neutral-950">
@@ -103,22 +90,19 @@ function ContactDetails() {
             <span className="sr-only"> - </span>
             <span
               className={clsx(
-                'mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl mx-auto',
+                'mx-auto mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl',
               )}
             >
               Let&apos;s work together
             </span>
           </h1>
           <div
-            className={clsx(
-              'mt-6 max-w-3xl text-xl text-neutral-600 mx-auto',
-            )}
+            className={clsx('mx-auto mt-6 max-w-3xl text-xl text-neutral-600')}
           >
             <p>We can&apos;t wait to hear from you</p>
           </div>
         </FadeIn>
       </Container>
-      
     </FadeIn>
   )
 }
@@ -131,7 +115,6 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactForm />

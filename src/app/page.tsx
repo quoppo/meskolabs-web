@@ -165,25 +165,26 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  let caseStudies = (await loadCaseStudies())
+  let caseStudies = await loadCaseStudies()
 
   return (
     <>
-      
-      <section className="relative w-screen pt-8 sm:pt-28 md:pt-40 flex flex-col space-y-8 md:space-y-16 lg:space-y-32 text-left rounded-4xl ">
+      <section className="relative flex w-screen flex-col space-y-8 rounded-4xl pt-8 text-left sm:pt-28 md:space-y-16 md:pt-40 lg:space-y-32">
         <Image
           src={background}
           alt="background image"
           fill
           priority
-          className="absolute inset-x-0 top-0 -z-10 object-cover rounded-b-4xl"
+          className="absolute inset-x-0 top-0 -z-10 rounded-b-4xl object-cover"
         />
         <Container className="relative w-full pb-10">
           <FadeIn className="max-w-5xl">
-            <h1 className="mt-4 font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl">
-              Transforming organisations with our comprehensive solutions
+            <h1 className="mt-4 font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl flex flex-col">
+              <span>Empowering organizations </span>
+              <span>through innovative, end-to-end</span>
+              <span>solutions.</span>
             </h1>
-            <p className="mt-6 max-w-2xl text-[10px] sm:text-xs text-white md:text-base">
+            <p className="mt-6 max-w-5xl text-[6px] text-white sm:text-base md:text-xl">
               Our mission is to bring your ideas to reality by offering a wide
               range of services, including product design and development,
               embedded hardware solutions, web design and development, and
@@ -204,7 +205,6 @@ export default async function Home() {
       <Services />
 
       <ContactSection />
-      
     </>
   )
 }
