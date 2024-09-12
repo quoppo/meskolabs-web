@@ -74,7 +74,7 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
+          <Button href="/contact" invert={invert} className='text-[8px] sm:text-sm'>
             Contact us
           </Button>
           <button
@@ -95,7 +95,7 @@ function Header({
                 invert
                   ? 'fill-black group-hover:fill-neutral-200'
                   : 'fill-white group-hover:fill-neutral-700',
-                pathname === '/contact' ? 'fill-black' : '',
+                pathname === '/contact' ? 'fill-black' : 'fill-white',
               )}
             />
           </button>
@@ -138,6 +138,7 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/">Home</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -223,7 +224,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      Our office
                     </h2>
                     <Offices
                       invert

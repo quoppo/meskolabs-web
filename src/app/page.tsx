@@ -35,22 +35,19 @@ function Clients() {
         </FadeIn>
         <FadeInStagger faster>
           <div className="relative">
-            <div className="animate-marquee flex items-center justify-center space-x-8 pt-8">
+            <div className="animate-marquee flex items-center justify-center space-x-8 pt-8 md:pt-10">
               {clients
                 .concat(clients)
                 .concat(clients)
                 .concat(clients)
                 .map(([client, logo]) => (
-                  <div
-                    key={client}
-                    className="h-12 w-64 flex-none rounded-lg p-2 shadow"
-                  >
+                  <div key={client} className="flex-none rounded-lg p-2 shadow">
                     <FadeIn>
                       <Image
                         src={logo}
                         alt="Slider Image"
                         width={256}
-                        height={48}
+                        height={46}
                         className="h-full w-full object-contain"
                         unoptimized
                       />
@@ -96,7 +93,7 @@ function CaseStudies({
                   </Link>
                 </h3>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                  {caseStudy.title}
+                  {caseStudy.client}
                 </p>
                 <p className="mt-4 text-base text-neutral-600">
                   {caseStudy.description}
@@ -136,22 +133,26 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Product Design & Development">
-              from conceptualization to market-ready prototypes, we ensure that
+            <ListItem title="Product Design & Development:">
+              From conceptualization to market-ready prototypes, we ensure that
               every step of the design and development process is meticulously
-              executed
+              executed.
             </ListItem>
-            <ListItem title="Embedded Hardware & software">
-              we specialize in developing custom hardware solutions that
+            <ListItem title="Embedded Hardware & software:">
+              We specialize in developing custom hardware solutions that
               seamlessly integrate with software, providing you with the tools
-              you need to innovate and stay ahead
+              you need to innovate and stay ahead.
             </ListItem>
-            <ListItem title="Website/App Design & Development">
-              whether you&#39;re looking for an e-commerce platform, a dynamic
+            <ListItem title="Website/App Design & Development:">
+              Whether you&#39;re looking for an e-commerce platform, a dynamic
               corporate website, or a cutting-edge mobile app, We&#39;ve got you
               covered with our web and app development services.
             </ListItem>
-            <ListItem title="Prototype">Dummy Text</ListItem>
+            <ListItem title="Prototype:">
+              We specialise in 3D printing with a deep understanding of
+              materials, and we are equally skilled in CNC machining and laser
+              cutting to create precise prototypes for your needs.
+            </ListItem>
           </List>
         </div>
       </Container>
@@ -179,12 +180,12 @@ export default async function Home() {
         />
         <Container className="relative w-full pb-10">
           <FadeIn className="max-w-5xl">
-            <h1 className="mt-4 font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl flex flex-col">
+            <h1 className="mt-4 flex flex-col font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl">
               <span>Empowering organizations </span>
               <span>through innovative, end-to-end</span>
               <span>solutions.</span>
             </h1>
-            <p className="mt-6 max-w-5xl text-[6px] text-white sm:text-base md:text-xl">
+            <p className="mt-2 max-w-5xl text-xs text-white sm:text-base md:mt-6 md:text-xl">
               Our mission is to bring your ideas to reality by offering a wide
               range of services, including product design and development,
               embedded hardware solutions, web design and development, and
@@ -197,7 +198,7 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial className="mt-24 text-white sm:mt-32 lg:mt-40">
+      <Testimonial className="mt-24 items-center text-white sm:mt-32 lg:mt-40">
         Our expertise ensures that we meet the unique needs of our clients,
         driving innovation and delivering exceptional results.
       </Testimonial>

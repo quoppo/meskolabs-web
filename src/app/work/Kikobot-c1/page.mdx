@@ -1,0 +1,113 @@
+import logo from './logo.svg'
+import imageHero from './hero.jpg'
+import interfacee from './interface.jpg'
+import ideation from './ideation.jpg'
+import structure from './structure.jpg'
+import prototype from './prototype.jpg'
+import Image from 'next/image'
+
+
+export const caseStudy = {
+  client: 'Kikobot C1',
+  title: 'Unleashing Speed and Accuracy with Delta Robotics', 
+  description:
+    "We're pushing the limits of speed and accuracy with Kikobot D1. Experience precision and efficiency like never before.",
+  summary: [
+    'FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.',
+    'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords "Gary Vee" and "Tony Robbins".',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Embedded Hardware & Software',
+  
+}
+
+export const metadata = {
+  title: `${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+<section className="flex flex-col space-y-10">
+  <h1 className="text-3xl font-semibold">Overview</h1>
+  <span className="text-justify">
+    Kikobot C1 is a compact and versatile six-axis collaborative robot,
+    specifically designed for multiple tasks and small-scale automation.
+    Developed by Meskolabs, India , it combines advanced functionality with ease
+    of use, making it a valuable tool for a wide range of applications. Weighing
+    900 grams, with a payload capacity of 250 grams and an working radius of 360
+    mm, Kikobot C1 is both lightweight and robust.
+  </span>
+  <span className="text-justify">
+    Kikobot C1 is designed to work seamlessly in various environments, such as
+    research, educational institutions, smart homes and commercial . Its
+    flexibility allows it to be equipped with different end effectors to adapt
+    to specific tasks, such as assembly, inspection, and handling objects.
+  </span>
+  <span className="text-justify">
+    Additionally, Kikobot C1 supports secondary development, enabling users to
+    customize and expand its capabilities through various software platforms
+    like ROS, Python, Embedded languages etc. This makes it an ideal choice for
+    those looking to innovate and personalize their robotic solutions.
+  </span>
+
+  <h1 className="text-3xl font-semibold">Ideation </h1>
+  <div className="max-w-5xl">
+    <Image
+      src={ideation}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+  <h2 className="text-lg font-bold">Structure :</h2>
+  <span className="text-justify">
+    The structure of Kikobot C1 is built with an ABS plastic body, offering a balance of enhanced rigidity and lightweight design. This combination ensures the robot is both durable and flexible for various tasks. The Kikobot C1, as shown in the image, consists of a sturdy base, six rotating joints for smooth movement, and two connecting links: the upper arm and forearm. These elements work together to provide precise control and stability during operation, making the robot versatile and reliable.
+  </span>
+  
+  <div className="max-w-5xl">
+    <Image
+      src={structure}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+  <h2 className="text-lg font-bold">First Prototype</h2>
+  <span className="text-justify">
+   We have successfully created the first working prototype of Kikobot C1, our collaborative robot (cobot). The prototype features a 3D-printed body, showcasing its sleek design and functionality. This initial model demonstrates the core features of the cobot, including precise movement control and adjustable joint angles, while being lightweight and easy to assemble. The 3D-printed prototype is a significant step forward in the development of Kikobot C1, allowing us to refine its design and performance for future versions.
+  </span>
+
+  <div className="max-w-5xl ">
+    <Image
+      src={prototype}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+  <h2 className="text-lg font-bold">Control Software</h2>
+  <span className="text-justify">
+    The Python-based software for the cobot offers a simple and intuitive interface to control the robot’s movements. You can easily adjust its position and joint angles, and even track its real-time motion. The software also lets you save specific positions, making it easy to automate tasks or recall previous setups. It’s designed to be powerful yet easy to use, perfect for managing Kikobot C1 in various applications.
+  </span>
+
+  <div className="max-w-5xl">
+    <Image
+      src={interfacee}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+</section>

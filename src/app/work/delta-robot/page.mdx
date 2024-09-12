@@ -1,15 +1,19 @@
 import logo from './logo.svg'
-import imageHero from './hero.svg'
-import solution from './solution.svg'
+import imageHero from './hero.jpg'
+import overview from './overview.jpg'
+import solution from './solution.jpg'
+import prototype1 from './prototype1.jpg'
+import prototype2 from './prototype2.jpg'
+import interfacee from './interface.jpg'
 import ideation from './ideation.svg'
 import Image from 'next/image'
 
 
 export const caseStudy = {
   client: 'Delta Robot',
-  title: 'Delta Robot', 
+  title: 'Unleashing Speed and Accuracy with Delta Robotics', 
   description:
-    "We're pushing the limits of speed and accuracy with Delta Robotics. Experience precision and efficiency like never before.",
+    "We're pushing the limits of speed and accuracy with Kikobot D1. Experience precision and efficiency like never before.",
   summary: [
     'FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.',
     'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords "Gary Vee" and "Tony Robbins".',
@@ -26,20 +30,129 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+<section className="flex flex-col space-y-10">
+  <h1 className="text-3xl font-semibold">Overview</h1>
+  <span className="text-justify">
+    The Delta robot, is designed for high precision and adaptability in various
+    applications. Its modular nature allows for quick swapping of end effectors,
+    making it highly versatile. This capability enables the robot to seamlessly
+    switch between different tasks, from delicate handling to more robust
+    operations, ensuring it can be customized to meet specific industrial needs.
+  </span>
 
-The Delta robot,  is designed for high precision and adaptability in various applications. Its modular nature allows for quick swapping of end effectors, making it highly versatile. This capability enables the robot to seamlessly switch between different tasks, from delicate handling to more robust operations, ensuring it can be customized to meet specific industrial needs.
+  <div className="max-w-5xl">
+    <Image
+      src={overview}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-A key feature of this Delta robot is its use of carbon fiber in the arms, providing an excellent strength-to-weight ratio. This material choice not only enhances the robot’s durability but also allows for faster movements with reduced inertia. The lightweight yet strong arms enable the robot to achieve high speeds while maintaining precise control, which is crucial for tasks that require both efficiency and accuracy.
+  <span className="text-justify">
+    A key feature of this Delta robot is its use of carbon fiber in the arms,
+    providing an excellent strength-to-weight ratio. This material choice not
+    only enhances the robot's durability but also allows for faster movements
+    with reduced inertia. The lightweight yet strong arms enable the robot to
+    achieve high speeds while maintaining precise control, which is crucial for
+    tasks that require both efficiency and accuracy.
+  </span>
+  <span className="text-justify">
+    The design of the Delta robot also emphasizes flexibility and precision in
+    the placement of its end effector. This ensures that the robot can perform
+    tasks with a high degree of accuracy, even in complex or tight spaces. The
+    combination of flexible structure, modularity, and the use of advanced
+    materials like carbon fiber makes this Delta robot an ideal solution for
+    industries that demand high performance and reliability.
+  </span>
 
-The design of the Delta robot also emphasizes flexibility and precision in the placement of its end effector. This ensures that the robot can perform tasks with a high degree of accuracy, even in complex or tight spaces. The combination of flexible structure, modularity, and the use of advanced materials like carbon fiber makes this Delta robot an ideal solution for industries that demand high performance and reliability.
+  <h1 className="text-3xl font-semibold">Ideation </h1>
+  <div className="max-w-5xl">
+    <Image
+      src={ideation}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
+  <h1 className="text-3xl font-semibold">Our Solution</h1>
+  <h2 className="text-lg font-bold">Structure :</h2>
+  <span className="text-justify">
+    Kikobot D1 is designed with a focus on efficiency and precision by carefully
+    selecting the right materials for each component. The base plate, made of
+    steel, provides a strong and stable foundation, ensuring rigidity during
+    high-speed operations. The active arms, constructed from lightweight carbon
+    fiber tubes, allow for fast, accurate movements. The passive arms, also made
+    from carbon fiber, help transfer motion while maintaining stability and
+    control.
+  </span>
+  <span className="text-justify">
+    We used 3D-printed carbon fiber motor covers to reduce weight around the
+    motors, enhancing overall performance. The end effector mounting is designed
+    to securely hold tools or grippers, ensuring precise control during tasks.
+    This combination of materials and design choices makes Kikobot D1 both fast
+    and reliable for various applications.
+  </span>
+  <div className="max-w-5xl">
+    <Image
+      src={solution}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-## Ideation
-<div className = "max-w-5xl"> 
-  <Image src={ideation} alt ="idiation" width={1005} height={526} priority className = "py-8 w-full h-full"/>
-</div>
-## Our Solution 
-<div className = "max-w-5xl"> 
-<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <h2 className="text-lg font-bold">First Prototype</h2>
+  <span className="text-justify">
+    We have successfully developed the first working prototype of Kikobot D1,
+    our Delta robot. The prototype features carbon fiber 3D-printed holders and
+    motor covers, with all arms made from lightweight yet strong carbon fiber
+    tubes. To ensure rigidity and stability, the upper base is constructed from
+    a sturdy steel base plate. This design offers high precision and durability,
+    making Kikobot D1 an efficient and reliable Delta robot. The combination of
+    advanced materials and thoughtful engineering marks a significant milestone
+    in its development.
+  </span>
+
+  <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4">
+    <Image
+      src={prototype1}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+    <Image
+      src={prototype2}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+<h2 className="text-lg font-bold">Control Software</h2>
+  <span className="text-justify">
+   The control software for the Kikobot D1 is custom-designed and developed in Python. It features an easy-to-use and visually appealing user interface, allowing smooth control and monitoring of the robot's operations. The software integrates advanced motion algorithms, ensuring precise movements, and provides real-time feedback for efficient and reliable performance. Whether for automation tasks or learning purposes, this software offers a user-friendly experience with powerful functionality tailored for Delta robot systems.
+  </span>
+
+  <div className="max-w-5xl">
+    <Image
+      src={interfacee}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+</section>

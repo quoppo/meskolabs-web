@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import { PiLinkedinLogoBold } from "react-icons/pi";
 
 function FacebookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -50,10 +51,19 @@ function DribbbleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const socialMediaProfiles = [
-  { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
-  { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
-  { title: 'Dribbble', href: 'https://dribbble.com', icon: DribbbleIcon },
+  // { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
+  {
+    title: 'Instagram',
+    href: 'https://www.instagram.com/meskolabs/?igsh=NmYxN3Z1Z3Z5ZjFz',
+    icon: InstagramIcon,
+  },
+  {
+    title: 'Linkedin',
+    href: 'https://www.linkedin.com/company/meskolabs/',
+    icon: PiLinkedinLogoBold,
+  },
+  // { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
+  // { title: 'Dribbble', href: 'https://dribbble.com', icon: DribbbleIcon },
 ]
 
 export function SocialMedia({
@@ -77,6 +87,7 @@ export function SocialMedia({
           <Link
             href={socialMediaProfile.href}
             aria-label={socialMediaProfile.title}
+            target="_blank"
             className={clsx(
               'transition',
               invert ? 'hover:text-neutral-200' : 'hover:text-neutral-700',

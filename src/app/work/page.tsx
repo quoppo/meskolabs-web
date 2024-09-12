@@ -152,10 +152,9 @@ export default async function Work() {
         <Image
           src={background}
           alt="background image"
-          width={1728}
-          height={1042}
+          fill
           priority
-          className="absolute inset-x-0 top-0 h-full -z-10 object-cover"
+          className="absolute inset-x-0 top-0 -z-10 rounded-b-4xl object-cover"
         />
         <Container className="relative">
           <FadeIn className="max-w-5xl">
@@ -190,3 +189,5 @@ export default async function Work() {
     </>
   )
 }
+
+

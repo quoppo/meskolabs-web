@@ -9,13 +9,13 @@ import { GridList, GridListItem } from '@/components/GridList'
 import { SectionIntro } from '@/components/SectionIntro'
 import imageShashankSrivastava from '@/images/team/ShashankSrivastava.svg'
 import imageSauravPanchal from '@/images/team/SauravPanchal.svg'
-import imagesSanikaDeshpande from "@/images/team/SanikaDeshpande.svg" 
-import imageKshitijChandanshive from "@/images/team/Kshitij Chandanshive.svg"
-import imagePranayLingayat from "@/images/team/PranayLingayat.svg"
-import imageYashJangid from "@/images/team/YashJangid.svg"
-import imageNamayJindal from "@/images/team/NamayJindal.svg"
-import imageRaghavendraSutar from "@/images/team/RaghavendraSutar.svg"
-import imageKartikeePawar from "@/images/team/KartikeePawar.svg"
+import imagesSanikaDeshpande from '@/images/team/SanikaDeshpande.svg'
+import imageKshitijChandanshive from '@/images/team/Kshitij Chandanshive.svg'
+import imagePranayLingayat from '@/images/team/PranayLingayat.svg'
+import imageYashJangid from '@/images/team/YashJangid.svg'
+import imageNamayJindal from '@/images/team/NamayJindal.svg'
+import imageRaghavendraSutar from '@/images/team/RaghavendraSutar.svg'
+import imageKartikeePawar from '@/images/team/KartikeePawar.svg'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
@@ -28,19 +28,30 @@ function Culture() {
         className=""
       >
         <p>
-        We are a team of designers and developers dedicated to creating memorable experiences that not only captivate but also solve real problems. We partner with ambitious companies to scale their products and people by combining exceptional design skills with advanced hardware and software services.
+          We are a team of designers and developers dedicated to creating
+          memorable experiences that not only captivate but also solve real
+          problems. We partner with ambitious companies to scale their products
+          and people by combining exceptional design skills with advanced
+          hardware and software services.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Commitment: " invert>
-          Our team is fully committed to delivering exceptional results, working collaboratively to turn ambitious ideas into reality, whether through innovative design or cutting-edge technology.
+            Our team is fully committed to delivering exceptional results,
+            working collaboratively to turn ambitious ideas into reality,
+            whether through innovative design or cutting-edge technology.
           </GridListItem>
           <GridListItem title="Reliability: " invert>
-           We trust in each other&#39s skills and dedication, knowing that we work not just to meet deadlines but to exceed expectations, ensuring every project is executed with precision and care.
+            We trust in each other&#39s skills and dedication, knowing that we
+            work not just to meet deadlines but to exceed expectations, ensuring
+            every project is executed with precision and care.
           </GridListItem>
           <GridListItem title="Empathy: " invert>
-           We understand the challenges that come with creating something extraordinary, and we stand by our partners, providing the support and understanding needed to overcome any obstacle, both in design and in development.
+            We understand the challenges that come with creating something
+            extraordinary, and we stand by our partners, providing the support
+            and understanding needed to overcome any obstacle, both in design
+            and in development.
           </GridListItem>
         </GridList>
       </Container>
@@ -54,17 +65,17 @@ const team = [
     people: [
       {
         name: 'Kshitij Chandanshive',
-        role: 'Product Designer',
+        role: 'Co-Founder / Product Designer',
         image: { src: imageKshitijChandanshive },
       },
       {
         name: 'Pranay Lingayat',
-        role: 'Product Designer',
+        role: 'Co-Founder / Product Designer',
         image: { src: imagePranayLingayat },
       },
       {
-        name: 'Raghavendra Sutar',
-        role: 'Embedded Design Engineer',
+        name: 'Ragavendra Sutar',
+        role: 'Co-Founder / Embedded Design Engineer',
         image: { src: imageRaghavendraSutar },
       },
       {
@@ -161,33 +172,33 @@ export default async function About() {
 
   return (
     <>
-      <section className="relative w-screen pt-8 sm:pt-12 md:h-screen md:pt-40">
-        <Image
-          src={background}
-          alt="background image"
-          width={1728}
-          height={1042}
-          priority
-          className="absolute inset-x-0 top-0 -z-10 object-cover"
-        />
-        <SectionIntro
-          eyebrow="About us"
-          title="We ideate, design, develop, and deliver."
-          className="mt-24 sm:mt-32 lg:mt-40"
-          invert
-        >
-          <p>
-            Our expertise ensures that we meet the unique needs of our clients,
-            driving innovation and delivering exceptional results.
-          </p>
-        </SectionIntro>
+      <section>
+        <section className="relative flex w-screen flex-col space-y-8 rounded-4xl pt-8 text-left sm:pt-28 md:space-y-16 md:pt-40 lg:space-y-32">
+          <Image
+            src={background}
+            alt="background image"
+            fill
+            priority
+            className="absolute inset-x-0 top-0 -z-10 h-full rounded-b-4xl object-cover"
+          />
+          <SectionIntro
+            eyebrow="About us"
+            title="We ideate, design, develop, and deliver."
+            className="mt-24 pb-10 sm:mt-32 lg:mt-40"
+            invert
+          >
+            <p>
+              Our expertise ensures that we meet the unique needs of our
+              clients, driving innovation and delivering exceptional results.
+            </p>
+          </SectionIntro>
+          <Culture />
+        </section>
+
+        <Team />
+
+        <ContactSection />
       </section>
-
-      <Culture />
-
-      <Team />
-
-      <ContactSection />
     </>
   )
 }

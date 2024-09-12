@@ -1,5 +1,9 @@
 import logo from './logo.svg'
-import imageHero from './hero.svg'
+import imageHero from './hero.jpg'
+import overview from './overview.jpg'
+import development1 from './development1.jpg'
+import development2 from './development2.jpg'
+import development3 from './development3.jpg'
 import solution from './solution.svg'
 import ideation from './ideation.svg'
 import Image from 'next/image'
@@ -26,22 +30,159 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+<section className="flex flex-col space-y-10">
+  <h1 className="text-3xl font-semibold">Overview</h1>
+  <span className="text-justify">
+    Drone Soccer is a fast-paced team sport where players pilot drones in an
+    enclosed arena. The goal is to fly the "Striker" drone through the
+    opponent's goal while defending your own with "Blockers." The game combines
+    strategy, precision, and teamwork as drones maneuver and collide in exciting
+    aerial action. It promotes STEM learning through drone design and
+    programming, making it both a thrilling sport and an educational experience.
+  </span>
+  <span className="text-justify">
+    The sport is a result of a collaborative effort between MeskoLabs and Drone
+    Soccer India, bringing together innovation and expertise to create a new
+    form of entertainment. The combination of cutting-edge drone technology with
+    the strategic gameplay of soccer results in a dynamic experience for both
+    players and spectators. The arena, with its illuminated goals and enclosed
+    space, adds to the intensity of the matches, creating an immersive
+    environment.
+  </span>
+  <span className="text-justify">
+    The complete Project involved Two major things: The Arena and Drones
+  </span>
 
-Drone soccer, as shown in the image, is an exciting new sport that combines the thrill of soccer with the advanced technology of drones. The drones are encased in protective cages, allowing them to collide and maneuver without damage. This unique design makes the game fast-paced and highly competitive, with teams using their drones to score goals while defending their own.
+  <h2 className="text-lg font-bold">Arena Design:</h2>
 
-The sport is a result of a collaborative effort between MeskLabs and XCompany, bringing together innovation and expertise to create a new form of entertainment. The combination of cutting-edge drone technology with the strategic gameplay of soccer results in a dynamic experience for both players and spectators. The arena, with its illuminated goals and enclosed space, adds to the intensity of the matches, creating an immersive environment.
+  <span className="text-justify">
+    <span className="text-lg font-bold">Protective Netting: </span>
+    The arena was designed with a key focus on creating a protective net that is
+    both easy to assemble and provides optimal visibility while ensuring safety
+    for users and the drones.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Modular Assembly: </span>
+    The netting system was engineered to be modular, enabling quick setup and
+    disassembly, making it ideal for various deployment scenarios.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Safety and Durability: </span>
+    The material used for the net was carefully selected to offer high
+    durability, ensuring it can absorb the impact of drone collisions without
+    compromising safety.
+  </span>
 
-Drone soccer not only offers a fun and engaging activity but also showcases the potential of drones in sports. It’s a perfect blend of technology and physical skill, where players must master both the controls of the drone and the tactics of the game. This collaboration marks the beginning of a new era in sports, where technology plays a central role in the excitement and challenge of competition.
+  <div className="max-w-5xl">
+    <Image
+      src={overview}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
+  <h2 className="text-lg font-bold">Drone Casing Development:</h2>
 
-## Ideation
-<div className = "max-w-5xl"> 
-<Image src={ideation} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Material Selection: </span>
+    The process began with in-depth material exploration, focusing on key
+    factors such as elasticity, rigidity, stiffness, and the geometrical
+    properties of the casings. We tested various materials to strike the right
+    balance between lightweight design and high impact resistance.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Geometrical Optimization: </span>
+    To enhance durability, the design considered cross-sections and curvatures
+    that minimize stress points while maintaining structural integrity. This was
+    critical in ensuring the drones could withstand collisions without adding
+    unnecessary weight.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Prototyping and Testing: </span>
+    Over the course of 18-19 weeks, we conducted multiple iterations of
+    prototypes, rigorously testing and refining the casings to ensure optimal
+    performance. Each iteration focused on enhancing resistance to impact while
+    minimizing weight.
+  </span>
 
+  <div className="max-w-5xl">
+    <Image
+      src={ideation}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-## Our Solution 
-<div className = "max-w-5xl"> 
-<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <h2 className="text-lg font-bold">Drone Casing Development:</h2>
+  <span className="text-justify">
+    Material Selection: The process began with in-depth material exploration,
+    focusing on key factors such as elasticity, rigidity, stiffness, and the
+    geometrical properties of the casings. We tested various materials to strike
+    the right balance between lightweight design and high impact resistance.
+  </span>
+  <span className="text-justify">
+    Geometrical Optimization: To enhance durability, the design considered
+    cross-sections and curvatures that minimize stress points while maintaining
+    structural integrity. This was critical in ensuring the drones could
+    withstand collisions without adding unnecessary weight.
+  </span>
+  <span className="text-justify">
+    Prototyping and Testing: Over the course of 18-19 weeks, we conducted
+    multiple iterations of prototypes, rigorously testing and refining the
+    casings to ensure optimal performance. Each iteration focused on enhancing
+    resistance to impact while minimizing weight.
+  </span>
+  <div className="grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <Image
+      src={development1}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+    <Image
+      src={development2}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+    <Image
+      src={development3}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+  <h2 className="text-lg font-bold">Final Implementation:</h2>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Casing Integration: </span>
+    Once the ideal casing design was finalized, we moved to the integration
+    phase, where the casings were attached to the drones. This phase involved
+    additional adjustments to ensure seamless attachment without compromising
+    the drones' functionality or performance.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Outcome: </span>
+    The final drone casings are both durable and lightweight, providing superior
+    protection during collisions while maintaining agility. The protective arena
+    and casings are now fully functional and aligned with the project’s
+    objectives of safety, durability, and performance.
+  </span>
+  <span className="text-justify">
+    This process involved thorough testing, material selection, and iterative
+    prototyping to achieve a solution that meets the high standards required for
+    both the arena and drone systems
+  </span>
+</section> 

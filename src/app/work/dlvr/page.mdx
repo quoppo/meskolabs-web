@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export const caseStudy = {
   client: 'DLVR',
-  title: 'DLVR', 
+  title: 'Friend Of Last Mile Driver.', 
   description:
     'The perfect companion for last-mile drivers, designed to make their job easier. This delivery bag is all about bringing smiles back to every delivery.',
   summary: [
@@ -26,21 +26,49 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+<section className="flex flex-col space-y-10">
+  <h1 className="text-3xl font-semibold">Overview</h1>
+  <span className="text-justify">
+    The delivery bag is designed to enhance the experience of last-mile delivery
+    by combining safety, functionality, and style. This cutting-edge bag is not
+    just about carrying parcels; it’s about ensuring that deliveries are secure
+    and arrive in perfect condition. The bag is secured with three locks, which
+    prevent it from falling off the bike during transit, even on rough roads.
+    This security feature is crucial for delivery personnel who need to ensure
+    that their packages remain intact and undamaged throughout the journey.
+  </span>
+  <span className="text-justify">
+    In addition to security, the design of the bag is also focused on stability.
+    The front of the bag is attached to the footrest of the bike, providing
+    extra support and preventing it from swinging or shifting while riding. This
+    attachment point ensures that the bag remains stable, reducing the risk of
+    accidents and making the delivery process smoother and safer. The thoughtful
+    placement of the attachment points showcases the attention to detail in the
+    design, aiming to make the life of a delivery person more efficient and
+    hassle-free.
+  </span>
 
-The delivery bag is designed to enhance the experience of last-mile delivery by combining safety, functionality, and style. This cutting-edge bag is not just about carrying parcels; it’s about ensuring that deliveries are secure and arrive in perfect condition. The bag is secured with three locks, which prevent it from falling off the bike during transit, even on rough roads. This security feature is crucial for delivery personnel who need to ensure that their packages remain intact and undamaged throughout the journey.
+  <h1 className="text-3xl font-semibold">Ideation</h1>
+  <div className="max-w-5xl">
+    <Image
+      src={ideation}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-In addition to security, the design of the bag is also focused on stability. The front of the bag is attached to the footrest of the bike, providing extra support and preventing it from swinging or shifting while riding. This attachment point ensures that the bag remains stable, reducing the risk of accidents and making the delivery process smoother and safer. The thoughtful placement of the attachment points showcases the attention to detail in the design, aiming to make the life of a delivery person more efficient and hassle-free.
-
-Finally, the bag is designed with convenience in mind. The side zippers allow for easy access to parcels, enabling quick retrieval and delivery. This feature is particularly useful in fast-paced delivery environments, where every second counts. The sleek design of the bag not only makes it functional but also gives it a modern, professional look, setting a new standard for delivery gear. Overall, this delivery bag is a perfect blend of robust performance and stylish design, making it an essential tool for anyone involved in last-mile delivery.
-
-
-## Ideation
-<div className = "max-w-5xl"> 
-<Image src={ideation} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
-
-## Our Solution 
-<div className = "max-w-5xl"> 
-<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <h1 className="text-3xl font-semibold">Our Solution</h1>
+  <div className="max-w-5xl">
+    <Image
+      src={solution}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+</section>

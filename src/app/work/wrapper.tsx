@@ -8,7 +8,6 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import Image from 'next/image'
 import background from '@/images/background.svg'
 
-
 export default async function CaseStudyLayout({
   caseStudy,
   children,
@@ -29,22 +28,21 @@ export default async function CaseStudyLayout({
             <Image
               src={background}
               alt="background image"
-              width={1728}
-              height={1042}
+              fill
               priority
-              className="absolute inset-x-0 top-0 -z-10 h-full object-cover"
+              className="absolute inset-x-0 top-0 -z-10 object-cover"
             />
             <PageIntro
               eyebrow="Case Study"
-              title={caseStudy.title.toUpperCase()}
+              title={caseStudy.client.toUpperCase()}
               centered
             >
-              <p className="font-light text-white">{caseStudy.description}</p>
+              <p className="font-light text-white">{caseStudy.title}</p>
             </PageIntro>
           </section>
 
           <FadeIn>
-            <div className=" border-t border-neutral-200 bg-white  ">
+            <div className="border-t border-neutral-200 bg-white">
               <Container>
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">

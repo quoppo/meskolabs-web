@@ -1,13 +1,18 @@
 import logo from '@/app/work/Kequel/logo.svg'
 import imageHero from './hero.jpg'
-import solution from './solution.svg'
+import solution from './solution.jpg'
+import research from './research.jpg'
+import personalization from './personalization.jpg'
+import module1 from './module1.jpg'
+import module2 from './module2.jpg'
+import module3 from './module3.jpg'
+import interfacee from './interface.jpg'
 import ideation from './ideation.svg'
 import Image from 'next/image'
 
-
 export const caseStudy = {
   client: 'Kequel',
-  title: 'Kequel', 
+  title: 'Unleashing Speed and Accuracy with Delta Robotics',
   description:
     "We're making smart features and customization easier for today's lifestyles. Enjoy innovation that fits right into your daily routine.",
   summary: [
@@ -18,7 +23,6 @@ export const caseStudy = {
   image: { src: imageHero },
   date: '2023-01',
   service: 'Product Design and Hardware & Software service',
-  
 }
 
 export const metadata = {
@@ -26,22 +30,196 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+<section className="flex flex-col space-y-10">
+  <h1 className="text-3xl font-semibold">Overview</h1>
+  <span className="text-justify">
+    The project aimed to design an innovative side table that seamlessly
+    interacts with users without imposing any additional tasks on their daily
+    routines. The objective was to create a functional piece of furniture that
+    enhances the user experience in a non-intrusive way, blending effortlessly
+    into everyday life. By focusing on intuitive design elements, the table
+    offers value through passive interaction, all while maintaining the
+    aesthetic and functional qualities of a traditional side table.
+  </span>
+  <span className="text-justify">
+    The project aimed to design an innovative side table that seamlessly
+    interacts with users without imposing any additional tasks on their daily
+    routines. The objective was to create a functional piece of furniture that
+    enhances the user experience in a non-intrusive way, blending effortlessly
+    into everyday life. By focusing on intuitive design elements, the table
+    offers value through passive interaction, all while maintaining the
+    aesthetic and functional qualities of a traditional side table.
+  </span>
+  <h2 className="text-xl font-medium">Research:</h2>
+  <span className="text-justify">
+    Our project began with in-depth user research, focusing on understanding the
+    needs of households. This research involved visiting families across various
+    metro cities, allowing us to gain valuable insights into how users adapt to
+    existing products and their surrounding environments. Through this process,
+    we gathered significant insights into user adaptations to existing products
+    and their surrounding circumstances. After a thorough analysis of the data,
+    we identified the precise actions required to address the identified needs.
+  </span>
 
-Creating a smart bedside table, starts with understanding what modern users need. The first step is designing features like the sunrise effect, which gradually brightens the room to wake you up gently or create a calming atmosphere. This feature is carefully designed to match the natural light patterns that help you wake up feeling refreshed.
+  <div className="max-w-5xl">
+    <Image
+      src={research}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-The next step is adding practical features, such as built-in charging sockets. These sockets are placed in a way that's easy to reach while keeping the table looking neat and stylish. The design team works closely with engineers to make sure everything works well and looks good at the same time, making it easy to charge your devices without any hassle.
+  <h1 className="text-3xl font-semibold">Ideation </h1>
+  <div className="max-w-5xl">
+    <Image
+      src={ideation}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-Lastly, the table is enhanced with features like a built-in aroma diffuser. This diffuser releases soothing scents to create a relaxing environment, all while being neatly integrated into the table's design. The result is a bedside table that not only meets your everyday needs but also adds a touch of comfort and modern style to your living space.
+  <h1 className="text-3xl font-semibold">Our Solution</h1>
+  <span className="text-justify">
+    A side table designed to enhance the overall experience by interacting
+    subtly, improving everyday routines and resulting in a more seamless and
+    enjoyable experience. Below are the key features included in this innovative
+    design
+  </span>
+  <div className="max-w-5xl">
+    <Image
+      src={solution}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
+  <h2 className="text-lg font-bold">Comprehensive Control</h2>
+  <span className="text-justify">
+    Lighting Customization: Tailor thhe brightness and color temperature of the
+    side table's lighting to match your mood or activity. Users can choose from
+    preset modes or create your own perfect ambiance.
+  </span>
+  <h2 className="text-lg font-bold">Personalization</h2>
+  <span className="text-justify">
+    Custom Profiles: Unique profiles can be created for each user, allowing
+    personalized settings for lighting, audio, and other features. The side
+    table adapts to everyone's individual preferences.
+  </span>
 
-## Ideation
-<div className = "max-w-5xl"> 
-<Image src={ideation} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <span className="text-justify">
+    Routine Scheduling: Users can Automate the smart sidetable to fit seamlessly
+    into there daily life. Allowing the user to wake up to gentle lighting or to
+    set the table to go into low-power mode when user is away.
+  </span>
 
+  <div className="max-w-5xl">
+    <Image
+      src={personalization}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
 
-## Our Solution 
-<div className = "max-w-5xl"> 
-<Image src={solution} alt ="idiation" width={1005} height={526} priority classname = "py-8 w-full h-full"/>
-</div>
+  <h2 className="text-lg font-bold">Customizable Electronic modules</h2>
+  <span className="text-justify">
+    All the features in this table are highly modular and customizable. These
+    electronic modules are very easy to swap for the user.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Power Sockets: </span>
+    Integrated power sockets within the bedside table can feature built-in
+    safety mechanisms like surge protection and childproofing. They enable
+    convenient charging of devices such as smartphones, tablets, or bedside
+    lamps directly from the table, reducing clutter and improving accessibility.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Aroma Diffuser: </span>
+    The aroma diffuser brings soothing scents to your bedside, perfect for
+    relaxation or sleep. Can be Programmed by user to operate at specific times
+    or intervals, offering you a personalized aromatherapy.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">USB Type-C and USB Charging Module: </span>
+    User can charge there smartphones and wearable tech directly from the
+    bedside table with our efficient and safe USB charging modules.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Air Quality Index (AQI) Module: </span>
+    For those who prioritize health, The AQI module monitors indoor air quality,
+    tracking particulate matter and VOC levels. Users can get real-time feedback
+    on air conditions to make informed decisions about ventilation or air
+    purifier use in your bedroom.
+  </span>
+  <span className="text-justify">
+    <span className="text-lg font-bold">Wireless Charging Module: </span>
+    Say goodbye to cable clutter with our wireless charging capabilities. Simply
+    place your Qi-compatible devices on designated spots on the table for
+    convenient charging, enhancing both aesthetics and practicality.
+  </span>
+
+  <div className="grid max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <Image
+      src={module1}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+    <Image
+      src={module2}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+    <Image
+      src={module3}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+
+  <h2 className="text-lg font-bold">The Kequel Mobile Application</h2>
+  <span className="text-justify">
+    A Hub for Smart Furniture Management. Dedicated mobile application is
+    designed to put the control of smart furniture. The mobile application
+    enhances the functionality and user experience of the smart sidetable.
+  </span>
+
+  <h2 className="text-lg font-bold">Intuitive Interface:</h2>
+  <span className="text-justify">
+    User-Friendly Design: Our app boasts a clean and intuitive interface, making
+    it a breeze to navigate and control all the smart features of your
+    furniture. Quick Setup: Setting up is simple with easy-to-follow
+    instructions that guide you through connecting your side table to the app
+    and your home network.
+  </span>
+
+  <div className="max-w-5xl">
+    <Image
+      src={interfacee}
+      alt="idiation"
+      width={1005}
+      height={526}
+      priority
+      classname="py-8 w-full h-full"
+    />
+  </div>
+</section>

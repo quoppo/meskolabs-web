@@ -22,10 +22,11 @@ export function Testimonial({
       <Image
         src={testimonial_background}
         alt="background image"
-        width={1728}
-        height={320}
+        // width={1728}
+        // height={320}
+        fill
         priority
-        className="absolute inset-x-0 top-0 -z-10 object-cover h-full"
+        className="absolute inset-x-0 top-0 -z-10 object-cover"
       />
       <Container>
         <FadeIn>
