@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     template: '%s - Meskolabs',
     default: 'Meskolabs',
   },
+  metadataBase: new URL("https://7013f260.meskolabs-web.pages.dev"),
+  twitter: {
+    card: "summary_large_image",
+  },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
