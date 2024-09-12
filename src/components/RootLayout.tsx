@@ -62,7 +62,7 @@ function Header({
             width={228}
             height={36}
             priority
-            className={`${pathname === '/contact' ? 'hidden' : 'block'}`}
+            className={`${pathname === '/contact' ? 'hidden' : 'block'} w-36 h-5 sm:w-full sm:h-full`}
           />
           <Image
             src={logo_black}
@@ -70,7 +70,7 @@ function Header({
             width={228}
             height={36}
             priority
-            className={`${pathname === '/contact' ? 'block' : 'hidden'}`}
+            className={`${pathname === '/contact' ? 'block' : 'hidden'} w-36 h-5 sm:w-full sm:h-full`}
           />
         </Link>
         <div className="flex items-center gap-x-8">
@@ -137,8 +137,8 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/about">About Us</NavigationItem>
         <NavigationItem href="/">Home</NavigationItem>
+        <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
     </nav>
   )

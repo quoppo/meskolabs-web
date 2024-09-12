@@ -69,7 +69,7 @@ function CaseStudies({
 }) {
   return (
     <>
-      <SectionIntro title="Our Products" className="mt-24 sm:mt-32 lg:mt-40">
+      <SectionIntro title="Our Projects" className="mt-24 sm:mt-32 lg:mt-40">
         <p>
           Explore our wide variety of products, each designed to meet your
           unique needs. Dive into our collection and find the perfect solution
@@ -87,7 +87,7 @@ function CaseStudies({
                     <Image
                       src={caseStudy.logo}
                       alt={caseStudy.client}
-                      className="h-16 w-16"
+                      className=" h-8 w-8 md:h-16 md:w-16"
                       unoptimized
                     />
                   </Link>
