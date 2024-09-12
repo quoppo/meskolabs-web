@@ -43,7 +43,7 @@ function Culture() {
             whether through innovative design or cutting-edge technology.
           </GridListItem>
           <GridListItem title="Reliability: " invert>
-            We trust in each other&#39s skills and dedication, knowing that we
+            We trust in each other&apos;s skills and dedication, knowing that we
             work not just to meet deadlines but to exceed expectations, ensuring
             every project is executed with precision and care.
           </GridListItem>
@@ -74,7 +74,7 @@ const team = [
         image: { src: imagePranayLingayat },
       },
       {
-        name: 'Ragavendra Sutar',
+        name: 'Raghvendra Sutar',
         role: 'Co-Founder / Embedded Design Engineer',
         image: { src: imageRaghavendraSutar },
       },
@@ -184,7 +184,7 @@ export default async function About() {
           <SectionIntro
             eyebrow="About us"
             title="We ideate, design, develop, and deliver."
-            className="mt-24 pb-10 sm:mt-32 lg:mt-40"
+            className="mt-24 sm:mt-32 lg:mt-40 pb-10 md:pb-28"
             invert
           >
             <p>

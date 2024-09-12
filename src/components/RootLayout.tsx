@@ -56,25 +56,35 @@ function Header({
     <Container>
       <div className="flex items-center justify-between">
         <Link href="/" aria-label="Home">
-          <Image
-            src={logo_white}
-            alt="logo"
-            width={228}
-            height={36}
-            priority
-            className={`${pathname === '/contact' ? 'hidden' : 'block'} w-36 h-5 sm:w-full sm:h-full`}
-          />
-          <Image
-            src={logo_black}
-            alt="logo"
-            width={228}
-            height={36}
-            priority
-            className={`${pathname === '/contact' ? 'block' : 'hidden'} w-36 h-5 sm:w-full sm:h-full`}
-          />
+          {(pathname !== '/contact' ||
+            (pathname === '/contact' && expanded)) && (
+            <Image
+              src={logo_white}
+              alt="logo"
+              width={228}
+              height={36}
+              priority
+              className="h-5 w-36 sm:h-full sm:w-full"
+            />
+          )}
+
+          {pathname === '/contact' && !expanded && (
+            <Image
+              src={logo_black}
+              alt="logo"
+              width={228}
+              height={36}
+              priority
+              className="h-5 w-36 sm:h-full sm:w-full"
+            />
+          )}
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert} className='text-[8px] sm:text-sm'>
+          <Button
+            href="/contact"
+            invert={invert}
+            className="text-[8px] sm:text-sm"
+          >
             Contact us
           </Button>
           <button
@@ -92,10 +102,14 @@ function Header({
             <Icon
               className={clsx(
                 'h-6 w-6',
+                pathname === '/contact'
+                  ? expanded
+                    ? 'fill-white' 
+                    : 'fill-black'
+                  : 'fill-white', 
                 invert
-                  ? 'fill-black group-hover:fill-neutral-200'
-                  : 'fill-white group-hover:fill-neutral-700',
-                pathname === '/contact' ? 'fill-black' : 'fill-white',
+                  ? 'group-hover:fill-neutral-200'
+                  : 'group-hover:fill-neutral-700',
               )}
             />
           </button>

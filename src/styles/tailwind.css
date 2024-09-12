@@ -13,5 +13,5 @@
 
 .animate-marquee {
   animation: marquee linear infinite;
-  animation-duration: 20s;
+  animation-duration: 25s;
 }

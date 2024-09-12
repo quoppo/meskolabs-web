@@ -181,9 +181,8 @@ export default async function Home() {
         <Container className="relative w-full pb-10">
           <FadeIn className="max-w-5xl">
             <h1 className="mt-4 flex flex-col font-display text-xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl md:text-5xl lg:text-7xl">
-              <span>Empowering organizations </span>
-              <span>through innovative, end-to-end</span>
-              <span>solutions.</span>
+              <span>Offering smart, end-to-end  </span>
+              <span>solutions for your needs.</span>
             </h1>
             <p className="mt-2 max-w-5xl text-xs text-white sm:text-base md:mt-6 md:text-xl">
               Our mission is to bring your ideas to reality by offering a wide
